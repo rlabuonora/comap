@@ -18,28 +18,28 @@
     "href": "diapos.html#productos-entregables",
     "title": "Presentación",
     "section": "Productos entregables",
-    "text": "Productos entregables\n\nPlan de Monitoreo (y Evaluación?).\nPlataforma tecnológica de soporte del Plan."
+    "text": "Productos entregables\n\n📄 Plan de Monitoreo (y Evaluación?).\n💻 Plataforma tecnológica de soporte del Plan."
   },
   {
-    "objectID": "diapos.html#plan",
-    "href": "diapos.html#plan",
+    "objectID": "diapos.html#plan-de-mye",
+    "href": "diapos.html#plan-de-mye",
     "title": "Presentación",
-    "section": "Plan",
-    "text": "Plan\n\nTeoría del cambio.\nPreguntas de evaluación.\nMatriz de Indicadores.\n\nDefinición\nForma de cálculo.\nFuente de información base.\nDimensiones relevantes (geográfica, género, innovación, sectores, exportaciones)."
+    "section": "Plan de MyE",
+    "text": "Plan de MyE\n\n🔄 Teoría del cambio\n\nExportaciones\nEmpleo de calidad\nTecnologías Limpias\nInnovación\nDescentralización"
+  },
+  {
+    "objectID": "diapos.html#plan-de-mye-2",
+    "href": "diapos.html#plan-de-mye-2",
+    "title": "Presentación",
+    "section": "Plan de MyE (2)",
+    "text": "Plan de MyE (2)\n\n❓ Preguntas de evaluación\n📊 Matriz de Indicadores\n\nDefinición\nForma de cálculo.\nFuente de información base.\nDimensiones relevantes (geográfica, género, innovación, sectores, exportaciones)."
   },
   {
     "objectID": "diapos.html#plataforma-tecnológica",
     "href": "diapos.html#plataforma-tecnológica",
     "title": "Presentación",
     "section": "Plataforma tecnológica",
-    "text": "Plataforma tecnológica\n\nEs una herramienta para responder las preguntas plateadas en el plan.\nAutomatiza procesos.\nData Lake -&gt; Data Warehouse -&gt; Tableros, Reportes."
-  },
-  {
-    "objectID": "diapos.html#recursos",
-    "href": "diapos.html#recursos",
-    "title": "Presentación",
-    "section": "Recursos",
-    "text": "Recursos\n\nUsuarios del sistema.\n\n¿Quiénes son? ¿Qué necesidades tienen?\n\nInfraestructura informática.\nFuentes de información.\n\nInternas (archivos Excel, Word, Papel, Otros Sistemas de Información).\nExternas (¿DGI?, ¿INE?)."
+    "text": "Plataforma tecnológica\n\n🧰 Herramienta para responder las preguntas plateadas en el plan.\n🔁 Automatiza procesos.\n\n ## Recursos\n\nUsuarios del sistema.\n\n¿Quiénes son? ¿Qué necesidades tienen?\n\nInfraestructura informática.\nFuentes de información.\n\nInternas (archivos Excel, Word, Papel, Otros Sistemas de Información).\nExternas (¿DGI?, ¿INE?)."
   },
   {
     "objectID": "diapos.html#plan-de-trabajo",

@@ -18,14 +18,21 @@ Plataforma tecnológica para gestionar ciclo de MyE con trazabilidad, seguridad 
 
 ## Productos entregables
 
-- Plan de Monitoreo (y Evaluación?).
-- Plataforma tecnológica de soporte del Plan.
+- 📄 Plan de Monitoreo (y Evaluación?).
+- 💻 Plataforma tecnológica de soporte del Plan.
 
-## Plan
+## Plan de MyE
 
-- Teoría del cambio. 
-- Preguntas de evaluación.
-- Matriz de Indicadores.
+- 🔄 Teoría del cambio
+  - Exportaciones
+  - Empleo de calidad
+  - Tecnologías Limpias
+  - Innovación
+  - Descentralización
+  
+## Plan de MyE (2)
+- ❓ Preguntas de evaluación
+- 📊 Matriz de Indicadores
   - Definición
   - Forma de cálculo.
   - Fuente de información base.
@@ -34,10 +41,10 @@ Plataforma tecnológica para gestionar ciclo de MyE con trazabilidad, seguridad 
 
 ## Plataforma tecnológica
 
-- Es una herramienta para responder las preguntas plateadas en el plan.
-- Automatiza procesos.
-- Data Lake -> Data Warehouse -> Tableros, Reportes.
+- 🧰 Herramienta para responder las preguntas plateadas en el plan.
+- 🔁 Automatiza procesos.
 
+![](warehouse.png){fig-align="center"}
 ## Recursos 
 
 - Usuarios del sistema.
