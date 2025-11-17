@@ -1,0 +1,6 @@
+project:
+  type: website
+
+format:
+  revealjs:
+    self-contained: false   # recommended for Netlify
