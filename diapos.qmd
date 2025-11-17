@@ -4,7 +4,7 @@ format: revealjs
 editor: visual
 ---
 
-## Objetivos de la reunión
+## 🎯 Objetivos de la reunión
 
 - Presentación del proyecto.
 - Validar entregables del proyecto.
@@ -53,15 +53,35 @@ Plataforma tecnológica para gestionar ciclo de MyE con trazabilidad, seguridad 
 - Revisión recursos disponibles.
 - Inventario de fuentes de información.
 
+
+
 ## Taller Breve
 
-- Tormenta de ideas: Preguntas de evaluación para hacerle al sistema.
+- Preguntas de para responder con el sistema.
+  - ¿Cuántos son los costos operativos del programa?
+  - ¿Cuánto es el costo por peso de inversión promovido?
+  - ¿Cuántos proyectos promovimos?
+  - ¿Cuánto demoran los proyectos en aprobarse?
+  - ¿Cuántos puestos de trabajo promovemos?
+  - ¿Cuántos puestos de trabajo crea el régimen?
 
-- Clasificar criterios de evaluabilidad:
-  - Eficiencia
-  - Coherencia
-  
+## Dimensiones relevantes
+
+- Geográfica (departamento, municipio).
+- Temporal.
+- Género
+- Sector de la economía
+
+## Matriz de indicadores
+
 - Clasificar indicadores de recursos, actividades, productos, resultados, impactos.
-  - 
+
+<!-- - Clasificar criterios de evaluabilidad: -->
+<!--   - Eficacia -->
+<!--   - Sostenibilidad -->
+<!--   - Eficiencia -->
+<!--   - Coherencia -->
+<!--   - Impacto -->
+  
 
 

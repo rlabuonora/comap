@@ -3,15 +3,15 @@
     "objectID": "diapos.html#objetivos-de-la-reunión",
     "href": "diapos.html#objetivos-de-la-reunión",
     "title": "Presentación",
-    "section": "Objetivos de la reunión",
-    "text": "Objetivos de la reunión\n\nPresentación del proyecto.\nValidar entregables del proyecto.\nEvaluar recursos disponibles.\nArmar plan de trabajo."
+    "section": "🎯 Objetivos de la reunión",
+    "text": "🎯 Objetivos de la reunión\n\nPresentación del proyecto.\nValidar entregables del proyecto.\nEvaluar recursos disponibles.\nArmar plan de trabajo."
   },
   {
     "objectID": "diapos.html#presentación-del-proyecto",
     "href": "diapos.html#presentación-del-proyecto",
     "title": "Presentación",
     "section": "Presentación del proyecto",
-    "text": "Presentación del proyecto\nConstruir una plataforma tecnológica para gestionar el ciclo completo de indicadores y evidencias de MyE (ingesta → modelado → cálculo → publicación → consulta), con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones."
+    "text": "Presentación del proyecto\nPlataforma tecnológica para gestionar ciclo de MyE con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones."
   },
   {
     "objectID": "diapos.html#productos-entregables",
@@ -25,34 +25,48 @@
     "href": "diapos.html#plan",
     "title": "Presentación",
     "section": "Plan",
-    "text": "Plan\n\nTeoría del cambio.\nPreguntas de evaluación.\nMatriz de Indicadores."
+    "text": "Plan\n\nTeoría del cambio.\nPreguntas de evaluación.\nMatriz de Indicadores.\n\nDefinición\nForma de cálculo.\nFuente de información base.\nDimensiones relevantes (geográfica, género, innovación, sectores, exportaciones)."
   },
   {
     "objectID": "diapos.html#plataforma-tecnológica",
     "href": "diapos.html#plataforma-tecnológica",
     "title": "Presentación",
     "section": "Plataforma tecnológica",
-    "text": "Plataforma tecnológica\n\nEs una herramienta para responder las preguntas plateadas en el plan.\nAutomatiza procesos.\nPermite visualizar y difundir la información."
+    "text": "Plataforma tecnológica\n\nEs una herramienta para responder las preguntas plateadas en el plan.\nAutomatiza procesos.\nData Lake -&gt; Data Warehouse -&gt; Tableros, Reportes."
   },
   {
     "objectID": "diapos.html#recursos",
     "href": "diapos.html#recursos",
     "title": "Presentación",
     "section": "Recursos",
-    "text": "Recursos\n\nInfraestructura informática.\nUsuarios del sistema.\nFuentes de información."
+    "text": "Recursos\n\nUsuarios del sistema.\n\n¿Quiénes son? ¿Qué necesidades tienen?\n\nInfraestructura informática.\nFuentes de información.\n\nInternas (archivos Excel, Word, Papel, Otros Sistemas de Información).\nExternas (¿DGI?, ¿INE?)."
   },
   {
     "objectID": "diapos.html#plan-de-trabajo",
     "href": "diapos.html#plan-de-trabajo",
     "title": "Presentación",
     "section": "Plan de Trabajo",
-    "text": "Plan de Trabajo\n\nRevisión de fuentes de datos y recursos disponibles.\nRevisión documentación."
+    "text": "Plan de Trabajo\n\nRevisión documentación.\nRevisión recursos disponibles.\nInventario de fuentes de información."
   },
   {
     "objectID": "diapos.html#taller-breve",
     "href": "diapos.html#taller-breve",
     "title": "Presentación",
     "section": "Taller Breve",
-    "text": "Taller Breve\n\nTormenta de ideas: Preguntas de evaluación para hacerle al sistema.\nClasificar criterios de evaluabilidad:\n\nEficiencia\nCoherencia\n\nClasificar indicadores de recursos, actividades, productos, resultados, impactos."
+    "text": "Taller Breve\n\nPreguntas de para responder con el sistema.\n\n¿Cuántos son los costos operativos del programa?\n¿Cuánto es el costo por peso de inversión promovido?\n¿Cuántos proyectos promovimos?\n¿Cuánto demoran los proyectos en aprobarse?\n¿Cuántos puestos de trabajo promovemos?\n¿Cuántos puestos de trabajo crea el régimen?"
+  },
+  {
+    "objectID": "diapos.html#dimensiones-relevantes",
+    "href": "diapos.html#dimensiones-relevantes",
+    "title": "Presentación",
+    "section": "Dimensiones relevantes",
+    "text": "Dimensiones relevantes\n\nGeográfica (departamento, municipio).\nTemporal.\nGénero\nSector de la economía"
+  },
+  {
+    "objectID": "diapos.html#matriz-de-indicadores",
+    "href": "diapos.html#matriz-de-indicadores",
+    "title": "Presentación",
+    "section": "Matriz de indicadores",
+    "text": "Matriz de indicadores\n\nClasificar indicadores de recursos, actividades, productos, resultados, impactos."
   }
 ]
