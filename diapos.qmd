@@ -14,7 +14,7 @@ editor: visual
 
 ## Presentación del proyecto
 
-Construir una plataforma tecnológica para gestionar el ciclo completo de indicadores y evidencias de MyE (ingesta → modelado → cálculo → publicación → consulta), con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones.
+Plataforma tecnológica para gestionar ciclo de MyE con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones.
 
 ## Productos entregables
 
@@ -23,39 +23,45 @@ Construir una plataforma tecnológica para gestionar el ciclo completo de indica
 
 ## Plan
 
-- Teoría del cambio.
+- Teoría del cambio. 
 - Preguntas de evaluación.
 - Matriz de Indicadores.
+  - Definición
+  - Forma de cálculo.
+  - Fuente de información base.
+  - Dimensiones relevantes (geográfica, género, innovación, sectores, exportaciones).
 
 
 ## Plataforma tecnológica
 
 - Es una herramienta para responder las preguntas plateadas en el plan.
 - Automatiza procesos.
-- Permite visualizar y difundir la información.
+- Data Lake -> Data Warehouse -> Tableros, Reportes.
 
 ## Recursos 
 
-- Infraestructura informática.
 - Usuarios del sistema.
+  - ¿Quiénes son? ¿Qué necesidades tienen?
+- Infraestructura informática.
 - Fuentes de información.
+  - Internas (archivos Excel, Word, Papel, Otros Sistemas de Información).
+  - Externas (¿DGI?, ¿INE?).
 
 ## Plan de Trabajo
 
-- Revisión de fuentes de datos y recursos disponibles.
 - Revisión documentación.
-- 
-
+- Revisión recursos disponibles.
+- Inventario de fuentes de información.
 
 ## Taller Breve
 
 - Tormenta de ideas: Preguntas de evaluación para hacerle al sistema.
+
 - Clasificar criterios de evaluabilidad:
   - Eficiencia
   - Coherencia
   
 - Clasificar indicadores de recursos, actividades, productos, resultados, impactos.
-
   - 
 
 
