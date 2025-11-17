@@ -4,21 +4,58 @@ format: revealjs
 editor: visual
 ---
 
-## Presentación del Proyecto
+## Objetivos de la reunión
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+- Presentación del proyecto.
+- Validar entregables del proyecto.
+- Evaluar recursos disponibles.
+- Armar plan de trabajo.
 
-## Bullets
 
-When you click the **Render** button a document will be generated that includes:
+## Presentación del proyecto
 
--   Content authored with markdown
--   Output from executable code
+Construir una plataforma tecnológica para gestionar el ciclo completo de indicadores y evidencias de MyE (ingesta → modelado → cálculo → publicación → consulta), con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones.
 
-## Code
+## Productos entregables
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+- Plan de Monitoreo (y Evaluación?).
+- Plataforma tecnológica de soporte del Plan.
 
-```{r}
-1 + 1
-```
+## Plan
+
+- Teoría del cambio.
+- Preguntas de evaluación.
+- Matriz de Indicadores.
+
+
+## Plataforma tecnológica
+
+- Es una herramienta para responder las preguntas plateadas en el plan.
+- Automatiza procesos.
+- Permite visualizar y difundir la información.
+
+## Recursos 
+
+- Infraestructura informática.
+- Usuarios del sistema.
+- Fuentes de información.
+
+## Plan de Trabajo
+
+- Revisión de fuentes de datos y recursos disponibles.
+- Revisión documentación.
+- 
+
+
+## Taller Breve
+
+- Tormenta de ideas: Preguntas de evaluación para hacerle al sistema.
+- Clasificar criterios de evaluabilidad:
+  - Eficiencia
+  - Coherencia
+  
+- Clasificar indicadores de recursos, actividades, productos, resultados, impactos.
+
+  - 
+
+

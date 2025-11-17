@@ -331,26 +331,72 @@
 </div>
 
 </section>
-<section id="presentación-del-proyecto" class="slide level2">
-<h2>Presentación del Proyecto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="objetivos-de-la-reunión" class="slide level2">
+<h2>Objetivos de la reunión</h2>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li>Presentación del proyecto.</li>
+<li>Validar entregables del proyecto.</li>
+<li>Evaluar recursos disponibles.</li>
+<li>Armar plan de trabajo.</li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="presentación-del-proyecto" class="slide level2">
+<h2>Presentación del proyecto</h2>
+<p>Construir una plataforma tecnológica para gestionar el ciclo completo de indicadores y evidencias de MyE (ingesta → modelado → cálculo → publicación → consulta), con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones.</p>
+</section>
+<section id="productos-entregables" class="slide level2">
+<h2>Productos entregables</h2>
+<ul>
+<li>Plan de Monitoreo (y Evaluación?).</li>
+<li>Plataforma tecnológica de soporte del Plan.</li>
+</ul>
+</section>
+<section id="plan" class="slide level2">
+<h2>Plan</h2>
+<ul>
+<li>Teoría del cambio.</li>
+<li>Preguntas de evaluación.</li>
+<li>Matriz de Indicadores.</li>
+</ul>
+</section>
+<section id="plataforma-tecnológica" class="slide level2">
+<h2>Plataforma tecnológica</h2>
+<ul>
+<li>Es una herramienta para responder las preguntas plateadas en el plan.</li>
+<li>Automatiza procesos.</li>
+<li>Permite visualizar y difundir la información.</li>
+</ul>
+</section>
+<section id="recursos" class="slide level2">
+<h2>Recursos</h2>
+<ul>
+<li>Infraestructura informática.</li>
+<li>Usuarios del sistema.</li>
+<li>Fuentes de información.</li>
+</ul>
+</section>
+<section id="plan-de-trabajo" class="slide level2">
+<h2>Plan de Trabajo</h2>
+<ul>
+<li>Revisión de fuentes de datos y recursos disponibles.</li>
+<li>Revisión documentación.</li>
+<li></li>
+</ul>
+</section>
+<section id="taller-breve" class="slide level2">
+<h2>Taller Breve</h2>
+<ul>
+<li><p>Tormenta de ideas: Preguntas de evaluación para hacerle al sistema.</p></li>
+<li><p>Clasificar criterios de evaluabilidad:</p>
+<ul>
+<li>Eficiencia</li>
+<li>Coherencia</li>
+</ul></li>
+<li><p>Clasificar indicadores de recursos, actividades, productos, resultados, impactos.</p>
+<ul>
+<li></li>
+</ul></li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -409,7 +455,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -568,82 +614,6 @@
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

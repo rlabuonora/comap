@@ -1,23 +1,58 @@
 [
   {
+    "objectID": "diapos.html#objetivos-de-la-reunión",
+    "href": "diapos.html#objetivos-de-la-reunión",
+    "title": "Presentación",
+    "section": "Objetivos de la reunión",
+    "text": "Objetivos de la reunión\n\nPresentación del proyecto.\nValidar entregables del proyecto.\nEvaluar recursos disponibles.\nArmar plan de trabajo."
+  },
+  {
     "objectID": "diapos.html#presentación-del-proyecto",
     "href": "diapos.html#presentación-del-proyecto",
     "title": "Presentación",
-    "section": "Presentación del Proyecto",
-    "text": "Presentación del Proyecto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+    "section": "Presentación del proyecto",
+    "text": "Presentación del proyecto\nConstruir una plataforma tecnológica para gestionar el ciclo completo de indicadores y evidencias de MyE (ingesta → modelado → cálculo → publicación → consulta), con trazabilidad, seguridad y tiempos de respuesta adecuados a la toma de decisiones."
   },
   {
-    "objectID": "diapos.html#bullets",
-    "href": "diapos.html#bullets",
+    "objectID": "diapos.html#productos-entregables",
+    "href": "diapos.html#productos-entregables",
     "title": "Presentación",
-    "section": "Bullets",
-    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+    "section": "Productos entregables",
+    "text": "Productos entregables\n\nPlan de Monitoreo (y Evaluación?).\nPlataforma tecnológica de soporte del Plan."
   },
   {
-    "objectID": "diapos.html#code",
-    "href": "diapos.html#code",
+    "objectID": "diapos.html#plan",
+    "href": "diapos.html#plan",
     "title": "Presentación",
-    "section": "Code",
-    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+    "section": "Plan",
+    "text": "Plan\n\nTeoría del cambio.\nPreguntas de evaluación.\nMatriz de Indicadores."
+  },
+  {
+    "objectID": "diapos.html#plataforma-tecnológica",
+    "href": "diapos.html#plataforma-tecnológica",
+    "title": "Presentación",
+    "section": "Plataforma tecnológica",
+    "text": "Plataforma tecnológica\n\nEs una herramienta para responder las preguntas plateadas en el plan.\nAutomatiza procesos.\nPermite visualizar y difundir la información."
+  },
+  {
+    "objectID": "diapos.html#recursos",
+    "href": "diapos.html#recursos",
+    "title": "Presentación",
+    "section": "Recursos",
+    "text": "Recursos\n\nInfraestructura informática.\nUsuarios del sistema.\nFuentes de información."
+  },
+  {
+    "objectID": "diapos.html#plan-de-trabajo",
+    "href": "diapos.html#plan-de-trabajo",
+    "title": "Presentación",
+    "section": "Plan de Trabajo",
+    "text": "Plan de Trabajo\n\nRevisión de fuentes de datos y recursos disponibles.\nRevisión documentación."
+  },
+  {
+    "objectID": "diapos.html#taller-breve",
+    "href": "diapos.html#taller-breve",
+    "title": "Presentación",
+    "section": "Taller Breve",
+    "text": "Taller Breve\n\nTormenta de ideas: Preguntas de evaluación para hacerle al sistema.\nClasificar criterios de evaluabilidad:\n\nEficiencia\nCoherencia\n\nClasificar indicadores de recursos, actividades, productos, resultados, impactos."
   }
 ]
