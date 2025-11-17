@@ -23,10 +23,10 @@ Plataforma tecnológica para gestionar ciclo de MyE con trazabilidad, seguridad 
 
 ## Plan de MyE
 
-- 🔄 Teoría del cambio
-  - Exportaciones
-  - Empleo de calidad
-  - Tecnologías Limpias
+- 🔄 Teoría del cambio. Objetivos de la política:
+  - Aumento Exportaciones
+  - Más Empleo de calidad
+  - Desarrollo Tecnologías Limpias
   - Innovación
   - Descentralización
   
