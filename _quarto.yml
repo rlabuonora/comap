@@ -1,6 +1,8 @@
 project:
   type: website
+  output-dir: _site
 
 format:
   revealjs:
-    self-contained: false   # recommended for Netlify
+    self-contained: false
+    slide-number: true
