@@ -1,0 +1,8 @@
+{
+  "name": "comap-presentation",
+  "private": true,
+  "scripts": {
+    "dev": "XDG_CACHE_HOME=.cache quarto preview presentation/slides.qmd --no-browser --port 4200",
+    "build": "XDG_CACHE_HOME=.cache quarto render presentation/slides.qmd --to revealjs"
+  }
+}

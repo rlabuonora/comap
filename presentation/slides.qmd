@@ -1,0 +1,73 @@
+---
+title: "COMAP — Technical Overview"
+subtitle: "Excel → R parser → JSON → Node API → PostgreSQL → Node UI → Shiny"
+author: "Equipo COMAP"
+lang: es
+format: revealjs
+---
+
+## Problema / Contexto
+
+- Hay muchos archivos XLSX desordenados y heterogéneos.
+- Existen múltiples versiones para un mismo proyecto subyacente.
+- Se requiere trazabilidad completa del origen al indicador final.
+- También se necesita analítica confiable para operación y seguimiento.
+
+::: {.notes}
+Enfatizar que el problema no es solo técnico: también es de gobernanza de datos y calidad histórica.
+:::
+
+## Arquitectura del Sistema
+
+```{mermaid}
+flowchart LR
+    A[Excel] --> B[R parser]
+    B --> C[Artifacts JSON]
+    C --> D[Node API]
+    D --> E[(PostgreSQL)]
+    E --> F[Node UI]
+    E --> G[Shiny]
+```
+
+::: {.notes}
+Resaltar que PostgreSQL es la fuente de verdad operacional y analítica.
+:::
+
+## Pipeline de Ingesta
+
+1. `Discover + fingerprint`: detección de archivos y huella para deduplicar/versionar.
+2. `Parse to artifacts`: extracción estructurada a artefactos JSON por archivo.
+3. `Resolve files to Projects`: vinculación de archivos con su Proyecto canónico.
+4. `Ingest/normalize to DB`: carga idempotente y normalización para consulta analítica.
+
+## Modelo de Datos
+
+- Entidades núcleo: `Empresas`, `Proyectos`, `Fits`, `Fues`.
+- Se conserva JSON crudo para auditoría y reproceso.
+- Se generan tablas normalizadas para performance analítica.
+- Trazabilidad de punta a punta: archivo fuente → registro normalizado.
+
+## Loop de Desarrollo
+
+- `make reset`: reinicio controlado del estado local.
+- `make smoke`: verificación rápida de salud del sistema.
+- `make dev`: ciclo de desarrollo integrado.
+- `make ui-check`: chequeos de interfaz.
+- `make data-audit`: auditoría de calidad y coherencia de datos.
+
+## Riesgos y Mitigaciones
+
+- `Parser drift`: tests de regresión sobre muestras representativas.
+- `Encoding`: normalización UTF-8 y validaciones tempranas.
+- `Duplicados/versiones`: fingerprint + reglas de resolución explícitas.
+- `Reproducibilidad`: pipelines determinísticos e ingestión idempotente.
+
+## Roadmap / Próximos Pasos
+
+- Plan de importación incremental + reportes de triage.
+- Cola de resolución en UI para casos ambiguos de matching.
+- Ingesta idempotente con tracking de jobs y métricas operativas.
+
+::: {.notes}
+Cerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución.
+:::

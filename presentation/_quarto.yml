@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: _site
+
+format:
+  revealjs:
+    theme: default
+    css: styles.css
+    slide-number: true
+    controls: true
+    progress: true
+    mermaid:
+      theme: neutral
+    preview-links: auto
