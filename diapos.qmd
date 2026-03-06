@@ -6,7 +6,7 @@ editor: visual
 
 ## 🎯 Objetivos de la reunión
 
-- Presentación del proyecto.
+
 - Validar entregables del proyecto.
 - Evaluar recursos disponibles.
 - Armar plan de trabajo.
