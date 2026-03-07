@@ -1,17 +1,76 @@
 ---
-title: "COMAP — Technical Overview"
-subtitle: "Excel → R parser → JSON → Node API → PostgreSQL → Node UI → Shiny"
-author: "Equipo COMAP"
+title: "COMAP — Herramienta de Monitoreo"
+subtitle: "Avance de Consultoría"
+author: "Rafael La Buonora"
 lang: es
 format: revealjs
 ---
 
-## Problema / Contexto
 
-- Hay muchos archivos XLSX desordenados y heterogéneos.
+## Régimen COMAP
+
+- Teoría del Cambio
+
+```{mermaid}
+flowchart LR
+
+A["<span style='font-size:1.25em; font-weight:700;'>Problema Público</span><br/>• Baja inversión privada<br/>• Baja innovación<br/>• Desigualdad territorial<br/>• Baja internacionalización"]
+B["<span style='font-size:1.25em; font-weight:700;'>Insumos</span><br/>• Exoneraciones fiscales<br/>• IRAE<br/>• IVA bienes de capital<br/>• Beneficios a la inversión"]
+C["<span style='font-size:1.25em; font-weight:700;'>Actividades</span><br/>• Recepción de proyectos<br/>• Evaluación técnica<br/>• Asignación de puntaje<br/>• Otorgamiento de beneficios<br/>• Seguimiento de compromisos"]
+D["<span style='font-size:1.25em; font-weight:700;'>Productos</span><br/>• Proyectos promovidos<br/>• Inversión comprometida<br/>• Beneficios fiscales otorgados"]
+E["<span style='font-size:1.25em; font-weight:700;'>Resultados</span><br/>• Mayor inversión<br/>• Creación de empleo<br/>• Aumento de exportaciones<br/>• Adopción de tecnología<br/>• Descentralización 
+territorial"]
+F["<span style='font-size:1.25em; font-weight:700;'>Impactos</span><br/>• Mayor productividad<br/>• Crecimiento económico<br/>• Diversificación productiva<br/>• Desarrollo territorial
+ equilibrado"]
+H["<span style='font-size:1.25em; font-weight:700;'>Riesgos</span><br/>• Inversión hubiera ocurrido 
+sin incentivo<br/>• Baja adicionalidad<br/>• Uso ineficiente del gasto 
+tributario"]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+
+H -.-> E
+```
+
+## Actividades consultoría
+
+  - Coordinación LM. Apoyo LB.
+  - Relevamiento de necesidades y recursos.
+  - Revisión de normativa y registros.
+  - Desarrollo simulador de exoneraciones.
+  - Plataforma de monitoreo.
+    - Consolidar registros históricos para analítica de proyectos basada en datos.
+
+
+## Indicadores Propuestos 
+
+- Desagregados por sector de actividad, ministerio evaluador y tamaño.
+
+- Actividades (Procesos)
+  - Proyectos pendientes de evaluación/evaluados.
+
+- Proyectos recomendados
+  - Cantidad de proyectos
+  - Montos de inversión promovidos
+  - Gasto tributario
+
+
+## Indicadores Propuestos (2)
+
+- Resultados esperados
+ - Aumento de exportaciones
+ - Empleo incremental
+ - Descentralización
+ - Inversión en I + D
+
+## Fuentes de Información
+
+- Gran volúmen de archivos XLSX.
 - Existen múltiples versiones para un mismo proyecto subyacente.
 - Se requiere trazabilidad completa del origen al indicador final.
-- También se necesita analítica confiable para operación y seguimiento.
 
 ::: {.notes}
 Enfatizar que el problema no es solo técnico: también es de gobernanza de datos y calidad histórica.
@@ -22,11 +81,11 @@ Enfatizar que el problema no es solo técnico: también es de gobernanza de dato
 ```{mermaid}
 flowchart LR
     A[Excel] --> B[R parser]
-    B --> C[Artifacts JSON]
-    C --> D[Node API]
+    B --> C[JSON]
+    C --> D[API]
     D --> E[(PostgreSQL)]
-    E --> F[Node UI]
-    E --> G[Shiny]
+    E --> F[Aplicación Web]
+    E --> G[Tablero de Indicadores]
 ```
 
 ::: {.notes}
@@ -36,7 +95,7 @@ Resaltar que PostgreSQL es la fuente de verdad operacional y analítica.
 ## Pipeline de Ingesta
 
 1. `Discover + fingerprint`: detección de archivos y huella para deduplicar/versionar.
-2. `Parse to artifacts`: extracción estructurada a artefactos JSON por archivo.
+2. `Parse to json`: extracción estructurada a artefactos JSON por archivo.
 3. `Resolve files to Projects`: vinculación de archivos con su Proyecto canónico.
 4. `Ingest/normalize to DB`: carga idempotente y normalización para consulta analítica.
 
@@ -47,27 +106,42 @@ Resaltar que PostgreSQL es la fuente de verdad operacional y analítica.
 - Se generan tablas normalizadas para performance analítica.
 - Trazabilidad de punta a punta: archivo fuente → registro normalizado.
 
-## Loop de Desarrollo
+## Estado actual del proyecto
 
-- `make reset`: reinicio controlado del estado local.
-- `make smoke`: verificación rápida de salud del sistema.
-- `make dev`: ciclo de desarrollo integrado.
-- `make ui-check`: chequeos de interfaz.
-- `make data-audit`: auditoría de calidad y coherencia de datos.
+- Carga parcial de datos:
+  - XX Fits
+  - YY Fues
+  - ZZ Proyectos
+  - WW Empresas
 
-## Riesgos y Mitigaciones
+Versión 0 de todos los componentes desarrollada.
 
-- `Parser drift`: tests de regresión sobre muestras representativas.
-- `Encoding`: normalización UTF-8 y validaciones tempranas.
-- `Duplicados/versiones`: fingerprint + reglas de resolución explícitas.
-- `Reproducibilidad`: pipelines determinísticos e ingestión idempotente.
 
-## Roadmap / Próximos Pasos
+## Aplicación 
 
-- Plan de importación incremental + reportes de triage.
-- Cola de resolución en UI para casos ambiguos de matching.
-- Ingesta idempotente con tracking de jobs y métricas operativas.
+## Tablero
+
+## Próximos Pasos
+
+- Despliegue en red MEF de Versión 1 con datos 2025.
+- Versión 2:
+  - Mejora en reporte de calidad y diccionario de datos.
+  - Indicadores adicionales.
+  - Desarrollo de búsquedas y consultas adicionales.
+  - Mejora en diseño e interfaces.
+  - Interconexión con VUI.
+  - Cola de resolución en UI para casos ambiguos.
 
 ::: {.notes}
 Cerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución.
 :::
+
+## Referencias
+
+- Llambí, C., Rius, A., Carrasco, P., Carbajal, F., y Cazulo, P. (2014).  
+*Una evaluación de los incentivos fiscales a la inversión en Uruguay*.  
+Montevideo: Centro de Estudios Fiscales.
+
+- República Oriental del Uruguay. (2025). *Decreto N.º 329/025: Régimen de promoción de inversiones*.  
+Ministerio de Economía y Finanzas.  
+https://www.gub.uy/ministerio-economia-finanzas/politicas-y-gestion/regimen-decreto-329025
