@@ -29,12 +29,11 @@ Salida publicada en `presentation/_site/`.
 
 `netlify.toml` en raíz ya está configurado para:
 
-- Build command: `quarto render presentation/slides.qmd --to revealjs`
-- Build command: `XDG_CACHE_HOME=/tmp quarto render presentation/slides.qmd --to revealjs`
+- Build command: vacío (sitio pre-renderizado en el repo)
 - Publish directory: `presentation/_site`
 
 Flujo futuro de actualización:
 
 1. Editar `presentation/slides.qmd`
 2. Commit + push a GitHub
-3. Netlify reconstruye y publica automáticamente
+3. Netlify publica el contenido actualizado de `presentation/_site`

@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "slides.html#régimen-comap",
+    "href": "slides.html#régimen-comap",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Régimen COMAP",
+    "text": "Régimen COMAP\n\nTeoría del Cambio\n\n\n\n\n\n\nflowchart LR\n\nA[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Problema Público&lt;/span&gt;&lt;br/&gt;• Baja inversión privada&lt;br/&gt;• Baja innovación&lt;br/&gt;• Desigualdad territorial&lt;br/&gt;• Baja internacionalización\"]\nB[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Insumos&lt;/span&gt;&lt;br/&gt;• Exoneraciones fiscales&lt;br/&gt;• IRAE&lt;br/&gt;• IVA bienes de capital&lt;br/&gt;• Beneficios a la inversión\"]\nC[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Actividades&lt;/span&gt;&lt;br/&gt;• Recepción de proyectos&lt;br/&gt;• Evaluación técnica&lt;br/&gt;• Asignación de puntaje&lt;br/&gt;• Otorgamiento de beneficios&lt;br/&gt;• Seguimiento de compromisos\"]\nD[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Productos&lt;/span&gt;&lt;br/&gt;• Proyectos promovidos&lt;br/&gt;• Inversión comprometida&lt;br/&gt;• Beneficios fiscales otorgados\"]\nE[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Resultados&lt;/span&gt;&lt;br/&gt;• Mayor inversión&lt;br/&gt;• Creación de empleo&lt;br/&gt;• Aumento de exportaciones&lt;br/&gt;• Adopción de tecnología&lt;br/&gt;• Descentralización \nterritorial\"]\nF[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Impactos&lt;/span&gt;&lt;br/&gt;• Mayor productividad&lt;br/&gt;• Crecimiento económico&lt;br/&gt;• Diversificación productiva&lt;br/&gt;• Desarrollo territorial\n equilibrado\"]\nH[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Riesgos&lt;/span&gt;&lt;br/&gt;• Inversión hubiera ocurrido \nsin incentivo&lt;br/&gt;• Baja adicionalidad&lt;br/&gt;• Uso ineficiente del gasto \ntributario\"]\n\nA --&gt; B\nB --&gt; C\nC --&gt; D\nD --&gt; E\nE --&gt; F\n\nH -.-&gt; E"
+  },
+  {
+    "objectID": "slides.html#actividades-consultoría",
+    "href": "slides.html#actividades-consultoría",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Actividades consultoría",
+    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDesarrollo simulador de exoneraciones.\nPlataforma de monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos."
+  },
+  {
+    "objectID": "slides.html#indicadores-propuestos",
+    "href": "slides.html#indicadores-propuestos",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Indicadores Propuestos",
+    "text": "Indicadores Propuestos\n\nDesagregados por sector de actividad, ministerio evaluador y tamaño.\nActividades (Procesos)\n\nProyectos pendientes de evaluación/evaluados.\n\nProyectos recomendados\n\nCantidad de proyectos\nMontos de inversión promovidos\nGasto tributario"
+  },
+  {
+    "objectID": "slides.html#indicadores-propuestos-2",
+    "href": "slides.html#indicadores-propuestos-2",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Indicadores Propuestos (2)",
+    "text": "Indicadores Propuestos (2)\n\nResultados esperados\nAumento de exportaciones\nEmpleo incremental\nDescentralización\nInversión en I + D"
+  },
+  {
+    "objectID": "slides.html#fuentes-de-información",
+    "href": "slides.html#fuentes-de-información",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Fuentes de Información",
+    "text": "Fuentes de Información\n\nGran volúmen de archivos XLSX.\nExisten múltiples versiones para un mismo proyecto subyacente.\nSe requiere trazabilidad completa del origen al indicador final.\n\n\nEnfatizar que el problema no es solo técnico: también es de gobernanza de datos y calidad histórica."
+  },
+  {
+    "objectID": "slides.html#arquitectura-del-sistema",
+    "href": "slides.html#arquitectura-del-sistema",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Arquitectura del Sistema",
+    "text": "Arquitectura del Sistema\n\n\n\n\n\nflowchart LR\n    A[Excel] --&gt; B[R parser]\n    B --&gt; C[JSON]\n    C --&gt; D[API]\n    D --&gt; E[(PostgreSQL)]\n    E --&gt; F[Aplicación Web]\n    E --&gt; G[Tablero de Indicadores]\n\n\n\n\n\n\n\nResaltar que PostgreSQL es la fuente de verdad operacional y analítica."
+  },
+  {
+    "objectID": "slides.html#pipeline-de-ingesta",
+    "href": "slides.html#pipeline-de-ingesta",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Pipeline de Ingesta",
+    "text": "Pipeline de Ingesta\n\nDiscover + fingerprint: detección de archivos y huella para deduplicar/versionar.\nParse to json: extracción estructurada a artefactos JSON por archivo.\nResolve files to Projects: vinculación de archivos con su Proyecto canónico.\nIngest/normalize to DB: carga idempotente y normalización para consulta analítica."
+  },
+  {
+    "objectID": "slides.html#modelo-de-datos",
+    "href": "slides.html#modelo-de-datos",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Modelo de Datos",
+    "text": "Modelo de Datos\n\nEntidades núcleo: Empresas, Proyectos, Fits, Fues.\nSe conserva JSON crudo para auditoría y reproceso.\nSe generan tablas normalizadas para performance analítica.\nTrazabilidad de punta a punta: archivo fuente → registro normalizado."
+  },
+  {
+    "objectID": "slides.html#estado-actual-del-proyecto",
+    "href": "slides.html#estado-actual-del-proyecto",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Estado actual del proyecto",
+    "text": "Estado actual del proyecto\n\nCarga parcial de datos:\n\nXX Fits\nYY Fues\nZZ Proyectos\nWW Empresas\n\n\nVersión 0 de todos los componentes desarrollada."
+  },
+  {
+    "objectID": "slides.html#aplicación",
+    "href": "slides.html#aplicación",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Aplicación",
+    "text": "Aplicación"
+  },
+  {
+    "objectID": "slides.html#tablero",
+    "href": "slides.html#tablero",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Tablero",
+    "text": "Tablero"
+  },
+  {
+    "objectID": "slides.html#próximos-pasos",
+    "href": "slides.html#próximos-pasos",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Próximos Pasos",
+    "text": "Próximos Pasos\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nVersión 2:\n\nMejora en reporte de calidad y diccionario de datos.\nIndicadores adicionales.\nDesarrollo de búsquedas y consultas adicionales.\nMejora en diseño e interfaces.\nInterconexión con VUI.\nCola de resolución en UI para casos ambiguos.\n\n\n\nCerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución."
+  },
+  {
+    "objectID": "slides.html#referencias",
+    "href": "slides.html#referencias",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Referencias",
+    "text": "Referencias\n\nLlambí, C., Rius, A., Carrasco, P., Carbajal, F., y Cazulo, P. (2014).\nUna evaluación de los incentivos fiscales a la inversión en Uruguay.\nMontevideo: Centro de Estudios Fiscales.\nRepública Oriental del Uruguay. (2025). Decreto N.º 329/025: Régimen de promoción de inversiones.\nMinisterio de Economía y Finanzas.\nhttps://www.gub.uy/ministerio-economia-finanzas/politicas-y-gestion/regimen-decreto-329025"
+  }
+]
