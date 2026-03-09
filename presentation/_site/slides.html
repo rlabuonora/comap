@@ -266,16 +266,16 @@ H -.-&gt; E
 <li><code>Publicar</code>: API rest para disponibilizar datos de la DB</li>
 </ol>
 </section>
-<section id="modelo-de-datos" class="slide level2">
-<h2>Modelo de Datos</h2>
+<section id="características-del-sistema" class="slide level2">
+<h2>Características del sistema</h2>
 <ul>
-<li>Entidades núcleo: <code>Empresas</code>, <code>Proyectos</code>, <code>Fits</code>, <code>Fues</code>.</li>
+<li>Entidades clave: <code>Empresas</code>, <code>Proyectos</code>, <code>Fits</code>, <code>Fues</code>.</li>
 <li>Se conserva JSON crudo y ruta de XLSX para auditoría y reproceso.</li>
 <li>Se generan tablas normalizadas para performance analítica.</li>
 </ul>
 </section>
-<section id="modelos-de-datos-2" class="slide level2">
-<h2>Modelos de Datos (2)</h2>
+<section id="modelos-de-datos" class="slide level2">
+<h2>Modelos de Datos</h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -295,13 +295,6 @@ H -.-&gt; E
 </div>
 </div>
 </div>
-</section>
-<section id="features" class="slide level2">
-<h2>Features</h2>
-<ul>
-<li>Observabilidad.</li>
-<li>Trazabilidad de punta a punta: archivo fuente → registro normalizado.</li>
-</ul>
 </section>
 <section id="estado-actual-del-proyecto" class="slide level2">
 <h2>Estado actual del proyecto</h2>
@@ -323,9 +316,14 @@ H -.-&gt; E
 <h2>Inspeccionar formularios</h2>
 
 <img data-src="images/node/fue-detalle.png" class="r-stretch"></section>
-<section id="tablero" class="slide level2">
-<h2>Tablero</h2>
-</section>
+<section id="tablero-1" class="slide level2">
+<h2>Tablero (1)</h2>
+
+<img data-src="images/shiny/nav-actividades.png" class="r-stretch"></section>
+<section id="tablero-2" class="slide level2">
+<h2>Tablero (2)</h2>
+
+<img data-src="images/shiny/nav-proyectos.png" class="r-stretch"></section>
 <section id="próximos-pasos-versión-1" class="slide level2">
 <h2>Próximos Pasos: Versión 1</h2>
 <ul>
@@ -343,25 +341,20 @@ H -.-&gt; E
 <section id="próximos-pasos-versión-2" class="slide level2">
 <h2>Próximos Pasos: Versión 2:</h2>
 <ul>
+<li>Mejora en el proceso de ingesta:
+<ul>
+<li>Importar campos adicionales (cuadro detallado de inversiones)</li>
+<li>Mejora en la deduplicación de formularios</li>
+<li>Incorporación de planillas de Control y Seguimiento</li>
+</ul></li>
 <li>Mejora en reporte de calidad y diccionario de datos.</li>
-<li>Diseño y desarrollo del tablero</li>
+<li>Diseño y desarrollo del tablero.
+<ul>
+<li>Datos detallados de indicadores de proyectos (empleo, etc.)</li>
+</ul></li>
 <li>Desarrollo de búsquedas y consultas adicionales.</li>
-<li>Mejora en diseño e interfaces.</li>
 <li>Interconexión con VUI.</li>
 </ul>
-<aside class="notes">
-<p>Cerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="referencias" class="slide level2">
 <h2>Referencias</h2>

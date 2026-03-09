@@ -134,7 +134,12 @@ Versión 0 de todos los componentes desarrollados.
 ![](images/node/fue-detalle.png)
 
 
-## Tablero
+## Tablero (1)
+
+![](images/shiny/nav-actividades.png)
+
+## Tablero (2)
+![](images/shiny/nav-proyectos.png)
 
 
 ## Próximos Pasos: Versión 1

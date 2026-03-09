@@ -49,25 +49,18 @@
     "text": "Pipeline de Ingesta\n\nDescubrir archivos: detección de archivos a importar.\nConvertir a json: extracción estructurada a archivos JSON por formulario.\nIngerir a Postgres: carga idempotente y normalización para consulta analítica.\nPublicar: API rest para disponibilizar datos de la DB"
   },
   {
-    "objectID": "slides.html#modelo-de-datos",
-    "href": "slides.html#modelo-de-datos",
+    "objectID": "slides.html#características-del-sistema",
+    "href": "slides.html#características-del-sistema",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Modelo de Datos",
-    "text": "Modelo de Datos\n\nEntidades núcleo: Empresas, Proyectos, Fits, Fues.\nSe conserva JSON crudo y ruta de XLSX para auditoría y reproceso.\nSe generan tablas normalizadas para performance analítica."
+    "section": "Características del sistema",
+    "text": "Características del sistema\n\nEntidades clave: Empresas, Proyectos, Fits, Fues.\nSe conserva JSON crudo y ruta de XLSX para auditoría y reproceso.\nSe generan tablas normalizadas para performance analítica."
   },
   {
-    "objectID": "slides.html#modelos-de-datos-2",
-    "href": "slides.html#modelos-de-datos-2",
+    "objectID": "slides.html#modelos-de-datos",
+    "href": "slides.html#modelos-de-datos",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Modelos de Datos (2)",
-    "text": "Modelos de Datos (2)\n\n\n\n\n\nflowchart LR\n\n    PROYECTO -- \"N:1\" --&gt; EMPRESA\n    FIT -- \"1:1\" --&gt; PROYECTO\n    FUE -- \"1:1\" --&gt; PROYECTO\n    CONTROL_SEGUIMIENTO -- \"N:1\" --&gt; PROYECTO"
-  },
-  {
-    "objectID": "slides.html#features",
-    "href": "slides.html#features",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Features",
-    "text": "Features\n\nObservabilidad.\nTrazabilidad de punta a punta: archivo fuente → registro normalizado."
+    "section": "Modelos de Datos",
+    "text": "Modelos de Datos\n\n\n\n\n\nflowchart LR\n\n    PROYECTO -- \"N:1\" --&gt; EMPRESA\n    FIT -- \"1:1\" --&gt; PROYECTO\n    FUE -- \"1:1\" --&gt; PROYECTO\n    CONTROL_SEGUIMIENTO -- \"N:1\" --&gt; PROYECTO"
   },
   {
     "objectID": "slides.html#estado-actual-del-proyecto",
@@ -105,11 +98,18 @@
     "text": "Inspeccionar formularios"
   },
   {
-    "objectID": "slides.html#tablero",
-    "href": "slides.html#tablero",
+    "objectID": "slides.html#tablero-1",
+    "href": "slides.html#tablero-1",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Tablero",
-    "text": "Tablero"
+    "section": "Tablero (1)",
+    "text": "Tablero (1)"
+  },
+  {
+    "objectID": "slides.html#tablero-2",
+    "href": "slides.html#tablero-2",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Tablero (2)",
+    "text": "Tablero (2)"
   },
   {
     "objectID": "slides.html#próximos-pasos-versión-1",
@@ -123,7 +123,7 @@
     "href": "slides.html#próximos-pasos-versión-2",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Próximos Pasos: Versión 2:",
-    "text": "Próximos Pasos: Versión 2:\n\nMejora en reporte de calidad y diccionario de datos.\nDiseño y desarrollo del tablero\nDesarrollo de búsquedas y consultas adicionales.\nMejora en diseño e interfaces.\nInterconexión con VUI.\n\n\nCerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución."
+    "text": "Próximos Pasos: Versión 2:\n\nMejora en el proceso de ingesta:\n\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la deduplicación de formularios\nIncorporación de planillas de Control y Seguimiento\n\nMejora en reporte de calidad y diccionario de datos.\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nDesarrollo de búsquedas y consultas adicionales.\nInterconexión con VUI."
   },
   {
     "objectID": "slides.html#referencias",
