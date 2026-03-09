@@ -41,7 +41,7 @@ H -.-> E
   - Relevamiento de necesidades y recursos.
   - Revisión de normativa y registros.
   - Desarrollo simulador de exoneraciones.
-  - Plataforma de monitoreo.
+  - Diseño e implementación de Plataforma de monitoreo.
     - Consolidar registros históricos para analítica de proyectos basada en datos.
 
 
@@ -60,21 +60,20 @@ H -.-> E
 
 ## Indicadores Propuestos (2)
 
-- Resultados esperados
- - Aumento de exportaciones
- - Empleo incremental
- - Descentralización
- - Inversión en I + D
+- Resultados:
+  - Aumento de exportaciones
+  - Empleo incremental
+  - Descentralización
+  - Inversión en I + D
 
 ## Fuentes de Información
 
-- Gran volúmen de archivos XLSX.
-- Existen múltiples versiones para un mismo proyecto subyacente.
-- Se requiere trazabilidad completa del origen al indicador final.
-
-::: {.notes}
-Enfatizar que el problema no es solo técnico: también es de gobernanza de datos y calidad histórica.
-:::
+- Gran volúmen de archivos XLSX dispersos en sistema de archivos.
+- Datos dispersos en:
+  - Estructura de directorios
+  - Metadata de los archivos (nombres, fecha modificación, nombres de hojas)
+  - Celdas de Excel 
+- Múltiples versiones de una planilla para un mismo formulario.
 
 ## Arquitectura del Sistema
 
@@ -88,53 +87,84 @@ flowchart LR
     E --> G[Tablero de Indicadores]
 ```
 
-::: {.notes}
-Resaltar que PostgreSQL es la fuente de verdad operacional y analítica.
-:::
-
 ## Pipeline de Ingesta
 
-1. `Discover + fingerprint`: detección de archivos y huella para deduplicar/versionar.
-2. `Parse to json`: extracción estructurada a artefactos JSON por archivo.
-3. `Resolve files to Projects`: vinculación de archivos con su Proyecto canónico.
-4. `Ingest/normalize to DB`: carga idempotente y normalización para consulta analítica.
+1. `Descubrir archivos`: detección de archivos a importar.
+2. `Convertir a json`: extracción estructurada a archivos JSON por formulario.
+3. `Ingerir a Postgres`: carga idempotente y normalización para consulta analítica.
+4. `Publicar`: API rest para disponibilizar datos de la DB
 
 ## Modelo de Datos
 
 - Entidades núcleo: `Empresas`, `Proyectos`, `Fits`, `Fues`.
-- Se conserva JSON crudo para auditoría y reproceso.
+- Se conserva JSON crudo y ruta de XLSX para auditoría y reproceso.
 - Se generan tablas normalizadas para performance analítica.
+
+## Modelos de Datos (2)
+
+```{mermaid}
+flowchart LR
+
+    PROYECTO -- "N:1" --> EMPRESA
+    FIT -- "1:1" --> PROYECTO
+    FUE -- "1:1" --> PROYECTO
+    CONTROL_SEGUIMIENTO -- "N:1" --> PROYECTO
+
+
+```
+
+## Features
+
+- Observabilidad.
 - Trazabilidad de punta a punta: archivo fuente → registro normalizado.
 
 ## Estado actual del proyecto
 
-- Carga parcial de datos:
-  - XX Fits
-  - YY Fues
-  - ZZ Proyectos
-  - WW Empresas
-
-Versión 0 de todos los componentes desarrollada.
-
+Versión 0 de todos los componentes desarrollados.
 
 ## Aplicación 
 
+![](images/node/home-ultimos-proyectos.png)
+
+## Búsqueda por Empresas
+
+![](images/node/empresas-lista.png)
+
+## Inspeccionar proyectos
+
+![](images/node/proyecto-detalle.png)
+
+## Inspeccionar formularios
+
+![](images/node/fue-detalle.png)
+
+
 ## Tablero
 
-## Próximos Pasos
+
+## Próximos Pasos: Versión 1
 
 - Despliegue en red MEF de Versión 1 con datos 2025.
-- Versión 2:
-  - Mejora en reporte de calidad y diccionario de datos.
-  - Indicadores adicionales.
-  - Desarrollo de búsquedas y consultas adicionales.
-  - Mejora en diseño e interfaces.
-  - Interconexión con VUI.
-  - Cola de resolución en UI para casos ambiguos.
+- Desarrollo de pantallas del tablero faltantes:
+  - Beneficios Fiscales
+  - Empleo
+  - Exportaciones
+  - Descentralización
+  - I + D
 
-::: {.notes}
-Cerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución.
-:::
+
+## Próximos Pasos: Versión 2:
+  - Mejora en el proceso de ingesta:
+    - Importar campos adicionales (cuadro detallado de inversiones)
+    - Mejora en la deduplicación de formularios
+    - Incorporación de planillas de Control y Seguimiento
+  - Mejora en reporte de calidad y diccionario de datos.
+  - Diseño y desarrollo del tablero.
+    - Datos detallados de indicadores de proyectos (empleo, etc.)
+  - Desarrollo de búsquedas y consultas adicionales.
+  - Interconexión con VUI.
+
+
 
 ## Referencias
 

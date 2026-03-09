@@ -11,7 +11,7 @@
     "href": "slides.html#actividades-consultoría",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Actividades consultoría",
-    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDesarrollo simulador de exoneraciones.\nPlataforma de monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos."
+    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDesarrollo simulador de exoneraciones.\nDiseño e implementación de Plataforma de monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos."
   },
   {
     "objectID": "slides.html#indicadores-propuestos",
@@ -25,42 +25,56 @@
     "href": "slides.html#indicadores-propuestos-2",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Indicadores Propuestos (2)",
-    "text": "Indicadores Propuestos (2)\n\nResultados esperados\nAumento de exportaciones\nEmpleo incremental\nDescentralización\nInversión en I + D"
+    "text": "Indicadores Propuestos (2)\n\nResultados:\n\nAumento de exportaciones\nEmpleo incremental\nDescentralización\nInversión en I + D"
   },
   {
     "objectID": "slides.html#fuentes-de-información",
     "href": "slides.html#fuentes-de-información",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Fuentes de Información",
-    "text": "Fuentes de Información\n\nGran volúmen de archivos XLSX.\nExisten múltiples versiones para un mismo proyecto subyacente.\nSe requiere trazabilidad completa del origen al indicador final.\n\n\nEnfatizar que el problema no es solo técnico: también es de gobernanza de datos y calidad histórica."
+    "text": "Fuentes de Información\n\nGran volúmen de archivos XLSX dispersos en sistema de archivos.\nDatos dispersos en:\n\nEstructura de directorios\nMetadata de los archivos (nombres, fecha modificación, nombres de hojas)\nCeldas de Excel\n\nMúltiples versiones de una planilla para un mismo formulario."
   },
   {
     "objectID": "slides.html#arquitectura-del-sistema",
     "href": "slides.html#arquitectura-del-sistema",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Arquitectura del Sistema",
-    "text": "Arquitectura del Sistema\n\n\n\n\n\nflowchart LR\n    A[Excel] --&gt; B[R parser]\n    B --&gt; C[JSON]\n    C --&gt; D[API]\n    D --&gt; E[(PostgreSQL)]\n    E --&gt; F[Aplicación Web]\n    E --&gt; G[Tablero de Indicadores]\n\n\n\n\n\n\n\nResaltar que PostgreSQL es la fuente de verdad operacional y analítica."
+    "text": "Arquitectura del Sistema\n\n\n\n\n\nflowchart LR\n    A[Excel] --&gt; B[R parser]\n    B --&gt; C[JSON]\n    C --&gt; D[API]\n    D --&gt; E[(PostgreSQL)]\n    E --&gt; F[Aplicación Web]\n    E --&gt; G[Tablero de Indicadores]"
   },
   {
     "objectID": "slides.html#pipeline-de-ingesta",
     "href": "slides.html#pipeline-de-ingesta",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Pipeline de Ingesta",
-    "text": "Pipeline de Ingesta\n\nDiscover + fingerprint: detección de archivos y huella para deduplicar/versionar.\nParse to json: extracción estructurada a artefactos JSON por archivo.\nResolve files to Projects: vinculación de archivos con su Proyecto canónico.\nIngest/normalize to DB: carga idempotente y normalización para consulta analítica."
+    "text": "Pipeline de Ingesta\n\nDescubrir archivos: detección de archivos a importar.\nConvertir a json: extracción estructurada a archivos JSON por formulario.\nIngerir a Postgres: carga idempotente y normalización para consulta analítica.\nPublicar: API rest para disponibilizar datos de la DB"
   },
   {
     "objectID": "slides.html#modelo-de-datos",
     "href": "slides.html#modelo-de-datos",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Modelo de Datos",
-    "text": "Modelo de Datos\n\nEntidades núcleo: Empresas, Proyectos, Fits, Fues.\nSe conserva JSON crudo para auditoría y reproceso.\nSe generan tablas normalizadas para performance analítica.\nTrazabilidad de punta a punta: archivo fuente → registro normalizado."
+    "text": "Modelo de Datos\n\nEntidades núcleo: Empresas, Proyectos, Fits, Fues.\nSe conserva JSON crudo y ruta de XLSX para auditoría y reproceso.\nSe generan tablas normalizadas para performance analítica."
+  },
+  {
+    "objectID": "slides.html#modelos-de-datos-2",
+    "href": "slides.html#modelos-de-datos-2",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Modelos de Datos (2)",
+    "text": "Modelos de Datos (2)\n\n\n\n\n\nflowchart LR\n\n    PROYECTO -- \"N:1\" --&gt; EMPRESA\n    FIT -- \"1:1\" --&gt; PROYECTO\n    FUE -- \"1:1\" --&gt; PROYECTO\n    CONTROL_SEGUIMIENTO -- \"N:1\" --&gt; PROYECTO"
+  },
+  {
+    "objectID": "slides.html#features",
+    "href": "slides.html#features",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Features",
+    "text": "Features\n\nObservabilidad.\nTrazabilidad de punta a punta: archivo fuente → registro normalizado."
   },
   {
     "objectID": "slides.html#estado-actual-del-proyecto",
     "href": "slides.html#estado-actual-del-proyecto",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Estado actual del proyecto",
-    "text": "Estado actual del proyecto\n\nCarga parcial de datos:\n\nXX Fits\nYY Fues\nZZ Proyectos\nWW Empresas\n\n\nVersión 0 de todos los componentes desarrollada."
+    "text": "Estado actual del proyecto\nVersión 0 de todos los componentes desarrollados."
   },
   {
     "objectID": "slides.html#aplicación",
@@ -70,6 +84,27 @@
     "text": "Aplicación"
   },
   {
+    "objectID": "slides.html#búsqueda-por-empresas",
+    "href": "slides.html#búsqueda-por-empresas",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Búsqueda por Empresas",
+    "text": "Búsqueda por Empresas"
+  },
+  {
+    "objectID": "slides.html#inspeccionar-proyectos",
+    "href": "slides.html#inspeccionar-proyectos",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Inspeccionar proyectos",
+    "text": "Inspeccionar proyectos"
+  },
+  {
+    "objectID": "slides.html#inspeccionar-formularios",
+    "href": "slides.html#inspeccionar-formularios",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Inspeccionar formularios",
+    "text": "Inspeccionar formularios"
+  },
+  {
     "objectID": "slides.html#tablero",
     "href": "slides.html#tablero",
     "title": "COMAP — Herramienta de Monitoreo",
@@ -77,11 +112,18 @@
     "text": "Tablero"
   },
   {
-    "objectID": "slides.html#próximos-pasos",
-    "href": "slides.html#próximos-pasos",
+    "objectID": "slides.html#próximos-pasos-versión-1",
+    "href": "slides.html#próximos-pasos-versión-1",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Próximos Pasos",
-    "text": "Próximos Pasos\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nVersión 2:\n\nMejora en reporte de calidad y diccionario de datos.\nIndicadores adicionales.\nDesarrollo de búsquedas y consultas adicionales.\nMejora en diseño e interfaces.\nInterconexión con VUI.\nCola de resolución en UI para casos ambiguos.\n\n\n\nCerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución."
+    "section": "Próximos Pasos: Versión 1",
+    "text": "Próximos Pasos: Versión 1\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D"
+  },
+  {
+    "objectID": "slides.html#próximos-pasos-versión-2",
+    "href": "slides.html#próximos-pasos-versión-2",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Próximos Pasos: Versión 2:",
+    "text": "Próximos Pasos: Versión 2:\n\nMejora en reporte de calidad y diccionario de datos.\nDiseño y desarrollo del tablero\nDesarrollo de búsquedas y consultas adicionales.\nMejora en diseño e interfaces.\nInterconexión con VUI.\n\n\nCerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución."
   },
   {
     "objectID": "slides.html#referencias",

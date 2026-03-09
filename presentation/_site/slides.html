@@ -189,7 +189,7 @@ H -.-&gt; E
 <li>Relevamiento de necesidades y recursos.</li>
 <li>Revisión de normativa y registros.</li>
 <li>Desarrollo simulador de exoneraciones.</li>
-<li>Plataforma de monitoreo.
+<li>Diseño e implementación de Plataforma de monitoreo.
 <ul>
 <li>Consolidar registros históricos para analítica de proyectos basada en datos.</li>
 </ul></li>
@@ -214,33 +214,27 @@ H -.-&gt; E
 <section id="indicadores-propuestos-2" class="slide level2">
 <h2>Indicadores Propuestos (2)</h2>
 <ul>
-<li>Resultados esperados</li>
+<li>Resultados:
+<ul>
 <li>Aumento de exportaciones</li>
 <li>Empleo incremental</li>
 <li>Descentralización</li>
 <li>Inversión en I + D</li>
+</ul></li>
 </ul>
 </section>
 <section id="fuentes-de-información" class="slide level2">
 <h2>Fuentes de Información</h2>
 <ul>
-<li>Gran volúmen de archivos XLSX.</li>
-<li>Existen múltiples versiones para un mismo proyecto subyacente.</li>
-<li>Se requiere trazabilidad completa del origen al indicador final.</li>
+<li>Gran volúmen de archivos XLSX dispersos en sistema de archivos.</li>
+<li>Datos dispersos en:
+<ul>
+<li>Estructura de directorios</li>
+<li>Metadata de los archivos (nombres, fecha modificación, nombres de hojas)</li>
+<li>Celdas de Excel</li>
+</ul></li>
+<li>Múltiples versiones de una planilla para un mismo formulario.</li>
 </ul>
-<aside class="notes">
-<p>Enfatizar que el problema no es solo técnico: también es de gobernanza de datos y calidad histórica.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="arquitectura-del-sistema" class="slide level2">
 <h2>Arquitectura del Sistema</h2>
@@ -262,70 +256,98 @@ H -.-&gt; E
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>Resaltar que PostgreSQL es la fuente de verdad operacional y analítica.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="pipeline-de-ingesta" class="slide level2">
 <h2>Pipeline de Ingesta</h2>
 <ol type="1">
-<li><code>Discover + fingerprint</code>: detección de archivos y huella para deduplicar/versionar.</li>
-<li><code>Parse to json</code>: extracción estructurada a artefactos JSON por archivo.</li>
-<li><code>Resolve files to Projects</code>: vinculación de archivos con su Proyecto canónico.</li>
-<li><code>Ingest/normalize to DB</code>: carga idempotente y normalización para consulta analítica.</li>
+<li><code>Descubrir archivos</code>: detección de archivos a importar.</li>
+<li><code>Convertir a json</code>: extracción estructurada a archivos JSON por formulario.</li>
+<li><code>Ingerir a Postgres</code>: carga idempotente y normalización para consulta analítica.</li>
+<li><code>Publicar</code>: API rest para disponibilizar datos de la DB</li>
 </ol>
 </section>
 <section id="modelo-de-datos" class="slide level2">
 <h2>Modelo de Datos</h2>
 <ul>
 <li>Entidades núcleo: <code>Empresas</code>, <code>Proyectos</code>, <code>Fits</code>, <code>Fues</code>.</li>
-<li>Se conserva JSON crudo para auditoría y reproceso.</li>
+<li>Se conserva JSON crudo y ruta de XLSX para auditoría y reproceso.</li>
 <li>Se generan tablas normalizadas para performance analítica.</li>
+</ul>
+</section>
+<section id="modelos-de-datos-2" class="slide level2">
+<h2>Modelos de Datos (2)</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+    PROYECTO -- "N:1" --&gt; EMPRESA
+    FIT -- "1:1" --&gt; PROYECTO
+    FUE -- "1:1" --&gt; PROYECTO
+    CONTROL_SEGUIMIENTO -- "N:1" --&gt; PROYECTO
+
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="features" class="slide level2">
+<h2>Features</h2>
+<ul>
+<li>Observabilidad.</li>
 <li>Trazabilidad de punta a punta: archivo fuente → registro normalizado.</li>
 </ul>
 </section>
 <section id="estado-actual-del-proyecto" class="slide level2">
 <h2>Estado actual del proyecto</h2>
-<ul>
-<li>Carga parcial de datos:
-<ul>
-<li>XX Fits</li>
-<li>YY Fues</li>
-<li>ZZ Proyectos</li>
-<li>WW Empresas</li>
-</ul></li>
-</ul>
-<p>Versión 0 de todos los componentes desarrollada.</p>
+<p>Versión 0 de todos los componentes desarrollados.</p>
 </section>
 <section id="aplicación" class="slide level2">
 <h2>Aplicación</h2>
-</section>
+
+<img data-src="images/node/home-ultimos-proyectos.png" class="r-stretch"></section>
+<section id="búsqueda-por-empresas" class="slide level2">
+<h2>Búsqueda por Empresas</h2>
+
+<img data-src="images/node/empresas-lista.png" class="r-stretch"></section>
+<section id="inspeccionar-proyectos" class="slide level2">
+<h2>Inspeccionar proyectos</h2>
+
+<img data-src="images/node/proyecto-detalle.png" class="r-stretch"></section>
+<section id="inspeccionar-formularios" class="slide level2">
+<h2>Inspeccionar formularios</h2>
+
+<img data-src="images/node/fue-detalle.png" class="r-stretch"></section>
 <section id="tablero" class="slide level2">
 <h2>Tablero</h2>
 </section>
-<section id="próximos-pasos" class="slide level2">
-<h2>Próximos Pasos</h2>
+<section id="próximos-pasos-versión-1" class="slide level2">
+<h2>Próximos Pasos: Versión 1</h2>
 <ul>
 <li>Despliegue en red MEF de Versión 1 con datos 2025.</li>
-<li>Versión 2:
+<li>Desarrollo de pantallas del tablero faltantes:
+<ul>
+<li>Beneficios Fiscales</li>
+<li>Empleo</li>
+<li>Exportaciones</li>
+<li>Descentralización</li>
+<li>I + D</li>
+</ul></li>
+</ul>
+</section>
+<section id="próximos-pasos-versión-2" class="slide level2">
+<h2>Próximos Pasos: Versión 2:</h2>
 <ul>
 <li>Mejora en reporte de calidad y diccionario de datos.</li>
-<li>Indicadores adicionales.</li>
+<li>Diseño y desarrollo del tablero</li>
 <li>Desarrollo de búsquedas y consultas adicionales.</li>
 <li>Mejora en diseño e interfaces.</li>
 <li>Interconexión con VUI.</li>
-<li>Cola de resolución en UI para casos ambiguos.</li>
-</ul></li>
 </ul>
 <aside class="notes">
 <p>Cerrar con foco en gobernanza operativa: medir tiempos de ingesta, tasa de errores y cobertura de resolución.</p>
