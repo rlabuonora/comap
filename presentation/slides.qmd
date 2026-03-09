@@ -94,13 +94,13 @@ flowchart LR
 3. `Ingerir a Postgres`: carga idempotente y normalización para consulta analítica.
 4. `Publicar`: API rest para disponibilizar datos de la DB
 
-## Modelo de Datos
+## Características del sistema
 
-- Entidades núcleo: `Empresas`, `Proyectos`, `Fits`, `Fues`.
+- Entidades  clave: `Empresas`, `Proyectos`, `Fits`, `Fues`.
 - Se conserva JSON crudo y ruta de XLSX para auditoría y reproceso.
 - Se generan tablas normalizadas para performance analítica.
 
-## Modelos de Datos (2)
+## Modelos de Datos 
 
 ```{mermaid}
 flowchart LR
@@ -112,11 +112,6 @@ flowchart LR
 
 
 ```
-
-## Features
-
-- Observabilidad.
-- Trazabilidad de punta a punta: archivo fuente → registro normalizado.
 
 ## Estado actual del proyecto
 
