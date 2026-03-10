@@ -26,7 +26,8 @@ format: revealjs
 Mostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente.
 :::
 
-<--
+<!--
+
 ## Régimen COMAP
 
 - Teoría del Cambio
@@ -403,7 +404,12 @@ Esta vista sirve para validación y control de calidad. Permite bajar desde la c
 
 
 ## Análisis 
-<img src="images/shiny/nav-inversion.png" style="width: 100%; height: 520px; object-fit: cover; object-position: top;" />
+<img src="images/shiny/nav-inversion.png" style="width: 100%; height: 600px; object-fit: cover; object-position: center top;" />
+
+
+## Análisis (2)
+<img src="images/shiny/nav-inversion.png" style="width: 100%; height: 900px; object-fit: cover; object-position: center bottom;" />
+
 
 
 ## Estado actual del proyecto

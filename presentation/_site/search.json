@@ -11,28 +11,7 @@
     "href": "slides.html#actividades-consultoría",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Actividades consultoría",
-    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDiseño e implementación de Plataforma de Monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos.\n\nDesarrollo simulador de exoneraciones.\n\n\nMostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente.\n\n&lt;– ## Régimen COMAP\n\nTeoría del Cambio\n\n\n\n\n\n\nflowchart LR\n\nA[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Problema Público&lt;/span&gt;&lt;br/&gt;• Baja inversión privada&lt;br/&gt;• Baja innovación&lt;br/&gt;• Desigualdad territorial&lt;br/&gt;• Baja internacionalización\"]\nB[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Insumos&lt;/span&gt;&lt;br/&gt;• Exoneraciones fiscales&lt;br/&gt;• IRAE&lt;br/&gt;• IVA bienes de capital&lt;br/&gt;• Beneficios a la inversión\"]\nC[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Actividades&lt;/span&gt;&lt;br/&gt;• Recepción de proyectos&lt;br/&gt;• Evaluación técnica&lt;br/&gt;• Asignación de puntaje&lt;br/&gt;• Otorgamiento de beneficios&lt;br/&gt;• Seguimiento de compromisos\"]\nD[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Productos&lt;/span&gt;&lt;br/&gt;• Proyectos promovidos&lt;br/&gt;• Inversión comprometida&lt;br/&gt;• Beneficios fiscales otorgados\"]\nE[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Resultados&lt;/span&gt;&lt;br/&gt;• Mayor inversión&lt;br/&gt;• Creación de empleo&lt;br/&gt;• Aumento de exportaciones&lt;br/&gt;• Adopción de tecnología&lt;br/&gt;• Descentralización \nterritorial\"]\nF[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Impactos&lt;/span&gt;&lt;br/&gt;• Mayor productividad&lt;br/&gt;• Crecimiento económico&lt;br/&gt;• Diversificación productiva&lt;br/&gt;• Desarrollo territorial\n equilibrado\"]\nH[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Riesgos&lt;/span&gt;&lt;br/&gt;• Inversión hubiera ocurrido \nsin incentivo&lt;br/&gt;• Baja adicionalidad&lt;br/&gt;• Uso ineficiente del gasto \ntributario\"]\n\nA --&gt; B\nB --&gt; C\nC --&gt; D\nD --&gt; E\nE --&gt; F\n\nH -.-&gt; E\n\n\n\n\n\n\n\nUsar esta lámina para recordar la teoría del cambio del régimen. El mensaje principal es que el monitoreo debe cubrir no solo trámites y proyectos, sino también resultados e impactos esperados."
-  },
-  {
-    "objectID": "slides.html#indicadores-propuestos-1",
-    "href": "slides.html#indicadores-propuestos-1",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Indicadores Propuestos (1)",
-    "text": "Indicadores Propuestos (1)\n\nDesagregados por:\nSector de actividad\nMinisterio evaluador\nTamaño de la empresa\nActividades (Procesos)\n\nProyectos pendientes de evaluación/evaluados.\nEvaluaciones (comparar datos presentado con datos evaluados)\nControl y seguimiento\n\n\n\nExplicar que esta primera familia de indicadores es de gestión operativa. Sirve para responder cómo está funcionando el proceso administrativo y dónde se acumulan cuellos de botella."
-  },
-  {
-    "objectID": "slides.html#indicadores-propuestos-2",
-    "href": "slides.html#indicadores-propuestos-2",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Indicadores Propuestos (2)",
-    "text": "Indicadores Propuestos (2)\n\nProductos\n\nCantidad de proyectos\nMontos de inversión promovidos\nGasto tributario\n\n\n\nAquí ya se mide output del régimen. Son indicadores relativamente más accesibles con los datos actuales y sirven como puente entre actividad administrativa y evaluación de resultados."
-  },
-  {
-    "objectID": "slides.html#indicadores-propuestos-3",
-    "href": "slides.html#indicadores-propuestos-3",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Indicadores Propuestos (3)",
-    "text": "Indicadores Propuestos (3)\n\nResultados:\n\nAumento de exportaciones\nEmpleo incremental\nDescentralización\nInversión en I + D\n\n\n\nMarcar la diferencia entre productos y resultados. Estos indicadores exigen mejor cobertura y series consistentes, por eso aparecen como una meta natural de maduración del sistema.\n\n–&gt;"
+    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDiseño e implementación de Plataforma de Monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos.\n\nDesarrollo simulador de exoneraciones.\n\n\nMostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente."
   },
   {
     "objectID": "slides.html#fuentes-de-información",
@@ -110,6 +89,13 @@
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Análisis",
     "text": "Análisis"
+  },
+  {
+    "objectID": "slides.html#análisis-2",
+    "href": "slides.html#análisis-2",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Análisis (2)",
+    "text": "Análisis (2)"
   },
   {
     "objectID": "slides.html#estado-actual-del-proyecto",
