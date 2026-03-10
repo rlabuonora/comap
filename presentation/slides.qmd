@@ -6,25 +6,11 @@ lang: es
 format: revealjs
 ---
 
-## Agenda
 
-- Breve contextualización del régimen y del proyecto
-- Situación inicial
-- Solución propuesta
-- Estado de Avance
-- Cierre
-
-::: {.notes}
-Abrir con una vista general del problema y del recorrido de la presentación. Anticipar que el foco va a estar en cómo convertir registros dispersos en una herramienta de monitoreo usable.
-:::
 
 ## Objetivo
 
 - Desarrollar una herramienta informática para automatizar el monitoreo del régimen de promoción de inversiones.
-
-::: {.notes}
-Enfatizar que el objetivo no es solo digitalizar archivos, sino construir una capacidad permanente de monitoreo. La automatización busca mejorar consistencia, trazabilidad y oportunidad de análisis.
-:::
 
 
 ## Actividades consultoría
@@ -40,7 +26,7 @@ Enfatizar que el objetivo no es solo digitalizar archivos, sino construir una ca
 Mostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente.
 :::
 
-
+<--
 ## Régimen COMAP
 
 - Teoría del Cambio
@@ -114,6 +100,8 @@ Aquí ya se mide output del régimen. Son indicadores relativamente más accesib
 Marcar la diferencia entre productos y resultados. Estos indicadores exigen mejor cobertura y series consistentes, por eso aparecen como una meta natural de maduración del sistema.
 :::
 
+-->
+
 ## Fuentes de Información
 
 - Gran volumen de archivos XLSX dispersos en sistema de archivos.
@@ -125,7 +113,7 @@ Marcar la diferencia entre productos y resultados. Estos indicadores exigen mejo
 - Criterios de registro de información cambia (definición de variables en los formularios).
 
 ::: {.notes}
-Esta lámina explica por qué el problema es complejo. No falta información; sobra heterogeneidad: archivos, nombres, formatos, versiones y cambios de criterio en el tiempo.
+Las joyas de la corona.
 :::
 
 
@@ -380,8 +368,6 @@ El primer paso es identificar y clasificar archivos, no todavía interpretar su 
 ## Pipeline (3) Normalizar y persistir en Base de Datos
 
 ![](images/node/home-ultimos-proyectos.png)
-
-
 
 ## Consultas y Búsquedas para gestión diaria
 
