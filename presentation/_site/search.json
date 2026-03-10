@@ -1,38 +1,66 @@
 [
   {
-    "objectID": "slides.html#régimen-comap",
-    "href": "slides.html#régimen-comap",
+    "objectID": "slides.html#agenda",
+    "href": "slides.html#agenda",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Régimen COMAP",
-    "text": "Régimen COMAP\n\nTeoría del Cambio\n\n\n\n\n\n\nflowchart LR\n\nA[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Problema Público&lt;/span&gt;&lt;br/&gt;• Baja inversión privada&lt;br/&gt;• Baja innovación&lt;br/&gt;• Desigualdad territorial&lt;br/&gt;• Baja internacionalización\"]\nB[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Insumos&lt;/span&gt;&lt;br/&gt;• Exoneraciones fiscales&lt;br/&gt;• IRAE&lt;br/&gt;• IVA bienes de capital&lt;br/&gt;• Beneficios a la inversión\"]\nC[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Actividades&lt;/span&gt;&lt;br/&gt;• Recepción de proyectos&lt;br/&gt;• Evaluación técnica&lt;br/&gt;• Asignación de puntaje&lt;br/&gt;• Otorgamiento de beneficios&lt;br/&gt;• Seguimiento de compromisos\"]\nD[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Productos&lt;/span&gt;&lt;br/&gt;• Proyectos promovidos&lt;br/&gt;• Inversión comprometida&lt;br/&gt;• Beneficios fiscales otorgados\"]\nE[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Resultados&lt;/span&gt;&lt;br/&gt;• Mayor inversión&lt;br/&gt;• Creación de empleo&lt;br/&gt;• Aumento de exportaciones&lt;br/&gt;• Adopción de tecnología&lt;br/&gt;• Descentralización \nterritorial\"]\nF[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Impactos&lt;/span&gt;&lt;br/&gt;• Mayor productividad&lt;br/&gt;• Crecimiento económico&lt;br/&gt;• Diversificación productiva&lt;br/&gt;• Desarrollo territorial\n equilibrado\"]\nH[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Riesgos&lt;/span&gt;&lt;br/&gt;• Inversión hubiera ocurrido \nsin incentivo&lt;br/&gt;• Baja adicionalidad&lt;br/&gt;• Uso ineficiente del gasto \ntributario\"]\n\nA --&gt; B\nB --&gt; C\nC --&gt; D\nD --&gt; E\nE --&gt; F\n\nH -.-&gt; E"
+    "section": "Agenda",
+    "text": "Agenda\n\nBreve contextualización del régimen y del proyecto\nSituación inicial\nSolución propuesta\nEstado de Avance\nHoja de ruta\n\n\nAbrir con una vista general del problema y del recorrido de la presentación. Anticipar que el foco va a estar en cómo convertir registros dispersos en una herramienta de monitoreo usable."
+  },
+  {
+    "objectID": "slides.html#objetivo",
+    "href": "slides.html#objetivo",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Objetivo",
+    "text": "Objetivo\n\nDesarrollar una herramienta informática para automatizar el monitoreo del régimen de promoción de inversiones.\n\n\nEnfatizar que el objetivo no es solo digitalizar archivos, sino construir una capacidad permanente de monitoreo. La automatización busca mejorar consistencia, trazabilidad y oportunidad de análisis."
   },
   {
     "objectID": "slides.html#actividades-consultoría",
     "href": "slides.html#actividades-consultoría",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Actividades consultoría",
-    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDesarrollo simulador de exoneraciones.\nDiseño e implementación de Plataforma de monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos."
+    "text": "Actividades consultoría\n\nCoordinación LM. Apoyo LB.\nRelevamiento de necesidades y recursos.\nRevisión de normativa y registros.\nDiseño e implementación de Plataforma de Monitoreo.\n\nConsolidar registros históricos para analítica de proyectos basada en datos.\n\nDesarrollo simulador de exoneraciones.\n\n\nMostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente."
   },
   {
-    "objectID": "slides.html#indicadores-propuestos",
-    "href": "slides.html#indicadores-propuestos",
+    "objectID": "slides.html#régimen-comap",
+    "href": "slides.html#régimen-comap",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Indicadores Propuestos",
-    "text": "Indicadores Propuestos\n\nDesagregados por sector de actividad, ministerio evaluador y tamaño.\nActividades (Procesos)\n\nProyectos pendientes de evaluación/evaluados.\n\nProyectos recomendados\n\nCantidad de proyectos\nMontos de inversión promovidos\nGasto tributario"
+    "section": "Régimen COMAP",
+    "text": "Régimen COMAP\n\nTeoría del Cambio\n\n\n\n\n\n\nflowchart LR\n\nA[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Problema Público&lt;/span&gt;&lt;br/&gt;• Baja inversión privada&lt;br/&gt;• Baja innovación&lt;br/&gt;• Desigualdad territorial&lt;br/&gt;• Baja internacionalización\"]\nB[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Insumos&lt;/span&gt;&lt;br/&gt;• Exoneraciones fiscales&lt;br/&gt;• IRAE&lt;br/&gt;• IVA bienes de capital&lt;br/&gt;• Beneficios a la inversión\"]\nC[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Actividades&lt;/span&gt;&lt;br/&gt;• Recepción de proyectos&lt;br/&gt;• Evaluación técnica&lt;br/&gt;• Asignación de puntaje&lt;br/&gt;• Otorgamiento de beneficios&lt;br/&gt;• Seguimiento de compromisos\"]\nD[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Productos&lt;/span&gt;&lt;br/&gt;• Proyectos promovidos&lt;br/&gt;• Inversión comprometida&lt;br/&gt;• Beneficios fiscales otorgados\"]\nE[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Resultados&lt;/span&gt;&lt;br/&gt;• Mayor inversión&lt;br/&gt;• Creación de empleo&lt;br/&gt;• Aumento de exportaciones&lt;br/&gt;• Adopción de tecnología&lt;br/&gt;• Descentralización \nterritorial\"]\nF[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Impactos&lt;/span&gt;&lt;br/&gt;• Mayor productividad&lt;br/&gt;• Crecimiento económico&lt;br/&gt;• Diversificación productiva&lt;br/&gt;• Desarrollo territorial\n equilibrado\"]\nH[\"&lt;span style='font-size:1.25em; font-weight:700;'&gt;Riesgos&lt;/span&gt;&lt;br/&gt;• Inversión hubiera ocurrido \nsin incentivo&lt;br/&gt;• Baja adicionalidad&lt;br/&gt;• Uso ineficiente del gasto \ntributario\"]\n\nA --&gt; B\nB --&gt; C\nC --&gt; D\nD --&gt; E\nE --&gt; F\n\nH -.-&gt; E\n\n\n\n\n\n\n\nUsar esta lámina para recordar la teoría del cambio del régimen. El mensaje principal es que el monitoreo debe cubrir no solo trámites y proyectos, sino también resultados e impactos esperados."
+  },
+  {
+    "objectID": "slides.html#indicadores-propuestos-1",
+    "href": "slides.html#indicadores-propuestos-1",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Indicadores Propuestos (1)",
+    "text": "Indicadores Propuestos (1)\n\nDesagregados por:\nSector de actividad\nMinisterio evaluador\nTamaño de la empresa\nActividades (Procesos)\n\nProyectos pendientes de evaluación/evaluados.\nEvaluaciones (comparar datos presentado con datos evaluados)\nControl y seguimiento\n\n\n\nExplicar que esta primera familia de indicadores es de gestión operativa. Sirve para responder cómo está funcionando el proceso administrativo y dónde se acumulan cuellos de botella."
   },
   {
     "objectID": "slides.html#indicadores-propuestos-2",
     "href": "slides.html#indicadores-propuestos-2",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Indicadores Propuestos (2)",
-    "text": "Indicadores Propuestos (2)\n\nResultados:\n\nAumento de exportaciones\nEmpleo incremental\nDescentralización\nInversión en I + D"
+    "text": "Indicadores Propuestos (2)\n\nProductos\n\nCantidad de proyectos\nMontos de inversión promovidos\nGasto tributario\n\n\n\nAquí ya se mide output del régimen. Son indicadores relativamente más accesibles con los datos actuales y sirven como puente entre actividad administrativa y evaluación de resultados."
+  },
+  {
+    "objectID": "slides.html#indicadores-propuestos-3",
+    "href": "slides.html#indicadores-propuestos-3",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Indicadores Propuestos (3)",
+    "text": "Indicadores Propuestos (3)\n\nResultados:\n\nAumento de exportaciones\nEmpleo incremental\nDescentralización\nInversión en I + D\n\n\n\nMarcar la diferencia entre productos y resultados. Estos indicadores exigen mejor cobertura y series consistentes, por eso aparecen como una meta natural de maduración del sistema."
   },
   {
     "objectID": "slides.html#fuentes-de-información",
     "href": "slides.html#fuentes-de-información",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Fuentes de Información",
-    "text": "Fuentes de Información\n\nGran volúmen de archivos XLSX dispersos en sistema de archivos.\nDatos dispersos en:\n\nEstructura de directorios\nMetadata de los archivos (nombres, fecha modificación, nombres de hojas)\nCeldas de Excel\n\nMúltiples versiones de una planilla para un mismo formulario."
+    "text": "Fuentes de Información\n\nGran volumen de archivos XLSX dispersos en sistema de archivos.\nDatos dispersos en:\n\nEstructura de directorios\nMetadata de los archivos (nombres, fecha modificación, nombres de hojas)\nCeldas de Excel\n\nMúltiples versiones de una planilla para un mismo formulario.\nCriterios de registro de información cambia (definición de variables en los formularios).\n\n\nEsta lámina explica por qué el problema es complejo. No falta información; sobra heterogeneidad: archivos, nombres, formatos, versiones y cambios de criterio en el tiempo."
+  },
+  {
+    "objectID": "slides.html#características-del-sistema",
+    "href": "slides.html#características-del-sistema",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Características del sistema",
+    "text": "Características del sistema\n\nObservabilidad\n\n¿Qué pasó con este formulario?\n\nTrazabilidad\n\n¿En qué formularios se basa este indicador?\n\nSeguridad\n\nAmbiente de desarrollo con datos reducidos.\nAmbiente de producción en red interna MEF."
   },
   {
     "objectID": "slides.html#arquitectura-del-sistema",
@@ -42,94 +70,80 @@
     "text": "Arquitectura del Sistema\n\n\n\n\n\nflowchart LR\n    A[Excel] --&gt; B[R parser]\n    B --&gt; C[JSON]\n    C --&gt; D[API]\n    D --&gt; E[(PostgreSQL)]\n    E --&gt; F[Aplicación Web]\n    E --&gt; G[Tablero de Indicadores]"
   },
   {
-    "objectID": "slides.html#pipeline-de-ingesta",
-    "href": "slides.html#pipeline-de-ingesta",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Pipeline de Ingesta",
-    "text": "Pipeline de Ingesta\n\nDescubrir archivos: detección de archivos a importar.\nConvertir a json: extracción estructurada a archivos JSON por formulario.\nIngerir a Postgres: carga idempotente y normalización para consulta analítica.\nPublicar: API rest para disponibilizar datos de la DB"
-  },
-  {
-    "objectID": "slides.html#características-del-sistema",
-    "href": "slides.html#características-del-sistema",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Características del sistema",
-    "text": "Características del sistema\n\nEntidades clave: Empresas, Proyectos, Fits, Fues.\nSe conserva JSON crudo y ruta de XLSX para auditoría y reproceso.\nSe generan tablas normalizadas para performance analítica."
-  },
-  {
     "objectID": "slides.html#modelos-de-datos",
     "href": "slides.html#modelos-de-datos",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Modelos de Datos",
-    "text": "Modelos de Datos\n\n\n\n\n\nflowchart LR\n\n    PROYECTO -- \"N:1\" --&gt; EMPRESA\n    FIT -- \"1:1\" --&gt; PROYECTO\n    FUE -- \"1:1\" --&gt; PROYECTO\n    CONTROL_SEGUIMIENTO -- \"N:1\" --&gt; PROYECTO"
+    "text": "Modelos de Datos\n\n\n\n\n\nflowchart LR\n\n    PROYECTO -- \"N:1\" --&gt; EMPRESA\n    FIT -- \"1:1\" --&gt; PROYECTO\n    FUE -- \"1:1\" --&gt; PROYECTO\n    CONTROL_SEGUIMIENTO -- \"N:1\" --&gt; PROYECTO\n    PUNTAJES[\"PUNTAJES&lt;br/&gt;• Empleo&lt;br/&gt;• Exportaciones&lt;br/&gt;• I+D\"] --&gt; FUE\n    CUADRO_INVERSIONES --&gt; FUE"
+  },
+  {
+    "objectID": "slides.html#pipeline-1-descubrir-archivos",
+    "href": "slides.html#pipeline-1-descubrir-archivos",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Pipeline (1): Descubrir archivos",
+    "text": "Pipeline (1): Descubrir archivos\n\n {\n      \"path_rel\": \"3 - MARZO 2025/REUNIÓN 20 03 2025/MGAP/268  - XXX, YYY, ZZZ  y Otros - 91.201 - FICTO/C1/1 Doc Formales/1 FIT MGAP XXXX XXX 24.xlsx\",\n      \"filename\": \"1 FIT MGAP XXXX YYYY 24.xlsx\",\n      \"ext\": \".xlsx\",\n      \"mtime_iso\": \"2024-06-25T15:09:34Z\",\n      \"provenance\": {\n        \"excel_creator\": \"marismendi\",\n        \"excel_last_modified_by\": \"Usuario\",\n        \"excel_modified_at\": \"2024-06-25T00:00:00Z\",\n      },\n      \"classification\": {\n        \"form_type\": \"fit\",\n        \"confidence\": 0.7,\n        \"reason\": \"Coincide con reglas de FIT por nombre de archivo.\",\n        \"matched_patterns\": [\"(?i)\\\\bfit\\\\b\", \"(?i).+\"]\n      },\n      \"import\": {\n        \"should_import\": true,\n      }\n        }\n\nEl primer paso es identificar y clasificar archivos, no todavía interpretar su contenido. También se registra procedencia para auditoría y para poder depurar errores aguas abajo."
+  },
+  {
+    "objectID": "slides.html#pipeline-2-convertir-a-formato-intermedio",
+    "href": "slides.html#pipeline-2-convertir-a-formato-intermedio",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Pipeline (2): Convertir a formato intermedio",
+    "text": "Pipeline (2): Convertir a formato intermedio\n\n{\n  \"bps\": null,\n  \"rut\": \"12345678910111\",\n  \"ciiu\": \"69201\",\n  \"giro\": \"Servicios contables prestados por Profesionales Independientes\",\n  \"mtss\": null,\n  \"anios\": 1,\n  \"grupo\": false,\n  \"correo\": \"info@xxxxxxx.com\",\n  \"sector\": \"Comercio y Servicios\",\n  \"monto_ui\": 57365,\n  \"objetivo\": \"Adquisición de mobiliario y equipamiento\",\n  \"telefono\": \"91055055\",\n  \"contactos\": [\n    {\n      \"cedula\": \"\",\n      \"correo\": \"info@xxxxx.com\",\n      \"nombre\": \"Nombre Apellido\",\n      \"telefono\": \"123456\",\n      \"direccion\": \"\"\n    }\n  ],\n  \"evaluador\": \"Cra. XXXXXX\",\n  \"monto_usd\": 8409.9515,\n  \"ventas_ui\": null,\n  \"beneficios\": {\n    \"irae\": true,\n    \"tasas\": false,\n    \"ip_civil\": false,\n    \"iva_muebles\": false,\n    \"ip_inmuebles\": true,\n    \"transitorios\": false,\n    \"iva_obra_civil\": false\n  },\n  \"controlada\": false,\n  \"fecha_vista\": null,\n  \"indicadores\": [\n    {\n      \"puntaje\": 10,\n      \"indicador\": \"empleo\",\n      \"ponderacion\": 0.5,\n      \"puntaje_final\": 5\n    },\n    {\n      \"puntaje\": 0,\n      \"indicador\": \"exportaciones\",\n      \"ponderacion\": 0.2,\n      \"puntaje_final\": 0\n    },\n    {\n      \"puntaje\": 4,\n      \"indicador\": \"descentralizacion\",\n      \"ponderacion\": 0.15,\n      \"puntaje_final\": 0.6\n    },\n    {\n      \"puntaje\": 0,\n      \"indicador\": \"tecnologias_limpias\",\n      \"ponderacion\": 0.2,\n      \"puntaje_final\": 0\n    },\n    {\n      \"puntaje\": 0,\n      \"indicador\": \"i_d\",\n      \"ponderacion\": 0.2,\n      \"puntaje_final\": 0\n    },\n    {\n      \"puntaje\": 0,\n      \"indicador\": \"sectorial\",\n      \"ponderacion\": 0.25,\n      \"puntaje_final\": 0\n    }\n  ],\n  \"monto_parque\": null,\n  \"razon_social\": \"Empresa S.A.S.\",\n  \"ventas_pesos\": null,\n  \"cotizacion_ui\": null,\n  \"empresa_nueva\": false,\n  \"fecha_balance\": \"2025-10-31\",\n  \"cotizacion_usd\": 41.64,\n  \"localizaciones\": [\n    {\n      \"padron\": null,\n      \"direccion\": \"Calle 6192\",\n      \"localidad\": \"Montevideo\",\n      \"departamento\": \"Montevideo\"\n    }\n  ],\n  \"cuadro_inversion\": {\n    \"Maquinarias y equipos\": 0,\n    \"Obra Civil (Leyes Sociales)\": 0,\n    \"SUB-TOTAL INVERSIÓN ELEGIBLE\": 57365,\n    \"TOTAL DE INVERSIONES PROMOVIDAS\": 57365,\n    \"Maquinarias y equipos (nacional)\": 57365,\n    \"SUB-TOTAL INVERSIÓN NO ELEGIBLE\": 0,\n    \"Maquinaria y equipos (importados)\": 0,\n    \"Imprevistos - Maquinarias y equipos\": 0,\n    \"Obra Civil (Materiales y Servicios)\": 0,\n    \"Imprevistos - Obra Civil (Leyes Sociales)\": 0,\n    \"Obra Civil Interior (Materiales y Servicios)\": 0,\n    \"Obra Civil Montevideo (Materiales y Servicios)\": 0,\n    \"Imprevistos (10%) - Obra Civil (Leyes Sociales)\": 0,\n    \"Imprevistos - Obra Civil (Materiales y Servicios)\": 0,\n    \"Maquinaria y equipos (no gravados/exentos para IVA)\": 0,\n    \"Imprevistos (10%) - Maquinarias y equipos (nacional)\": 0,\n    \"Imprevistos (10%) - Maquinaria y equipos (importados)\": 0,\n    \"Imprevistos (10%) - Obra Civil (Materiales y Servicios)\": 0,\n    \"Imprevistos (10%) - Maquinaria y equipos (no gravados/exentos para IVA)\": 0,\n    \"Obra Civil Interior (Leyes Sociales, Mano de obra propia - Sueldos, Bienes y Servicios importados que integran la Obra Civil que se exoneraron por tributos a la importación )\": 0,\n    \"Obra Civil Montevideo (Leyes Sociales, Mano de obra propia - Sueldos, Bienes y Servicios importados que integran la Obra Civil que se exoneraron por tributos a la importación )\": 0\n  },\n  \"domicilio_fiscal\": \"Calle 6192\",\n  \"fecha_evaluacion\": \"2025-03-20\",\n  \"nombre_comercial\": \"Empresa S.A.S.\",\n  \"source_file_path\": \"/home/opp/dev/comap_data/4 - ABRIL 2025/REUNION 24.04.2025/MEF/FICTOS/268 - XXXX S.A.S. EXP. 91.587 (FICTO)/FUE FICTO DEC 268-MEF XXXX SAS Exp.91587.xlsx\",\n  \"numero_expediente\": \"91587\",\n  \"responsable_legal\": \"Nombre Apellido\",\n  \"cantidad_empleados\": null,\n  \"contribuyente_irae\": null,\n  \"fecha_presentacion\": \"2024-10-24\",\n  \"tipo_contribuyente\": null,\n  \"beneficios_fiscales\": {\n    \"Exoneración de IRAE\": {\n      \"tasa\": 0.7578,\n      \"aplica\": true,\n      \"exoneracion\": 43471.197,\n      \"monto_imponible\": 57365\n    },\n    \"Exoneración de IP Bienes muebles\": {\n      \"tasa\": 0.0825,\n      \"aplica\": true,\n      \"exoneracion\": 4732.6125,\n      \"monto_imponible\": 57365\n    },\n    \"Exoneración de IVA Bienes muebles\": {\n      \"tasa\": 0.22,\n      \"aplica\": false,\n      \"exoneracion\": 0,\n      \"monto_imponible\": 0\n    },\n    \"Exoneración de IP Obra Civil Interior\": {\n      \"tasa\": 0.1365,\n      \"aplica\": false,\n      \"exoneracion\": 0,\n      \"monto_imponible\": 0\n    },\n    \"Exoneración de IP Obra Civil Montevideo\": {\n      \"tasa\": 0.1116,\n      \"aplica\": false,\n      \"exoneracion\": 0,\n      \"monto_imponible\": 0\n    },\n    \"Tasas y tributos a la importación - CIF\": {\n      \"tasa\": 0.3785,\n      \"aplica\": false,\n      \"exoneracion\": 0,\n      \"monto_imponible\": 0\n    },\n    \"Tasas y tributos a la importación - FOB\": {\n      \"tasa\": 0.3785,\n      \"aplica\": false,\n      \"exoneracion\": 0,\n      \"monto_imponible\": 0\n    },\n    \"Exoneración de IVA Materiales y servicios de Obra Civil\": {\n      \"tasa\": 0.22,\n      \"aplica\": false,\n      \"exoneracion\": 0,\n      \"monto_imponible\": 0\n    }\n  },\n  \"ministerio_evaluador\": \"MEF\"\n}"
+  },
+  {
+    "objectID": "slides.html#pipeline-3-normalizar-y-persistir-en-base-de-datos",
+    "href": "slides.html#pipeline-3-normalizar-y-persistir-en-base-de-datos",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Pipeline (3) Normalizar y persistir en Base de Datos",
+    "text": "Pipeline (3) Normalizar y persistir en Base de Datos"
+  },
+  {
+    "objectID": "slides.html#consultas-y-búsquedas-para-gestión-diaria",
+    "href": "slides.html#consultas-y-búsquedas-para-gestión-diaria",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Consultas y Búsquedas para gestión diaria",
+    "text": "Consultas y Búsquedas para gestión diaria\n\n\n\n¿Cuántos proyectos tiene la empresa X?\n¿Está al día con control y seguimiento?"
+  },
+  {
+    "objectID": "slides.html#inspección-de-formularios",
+    "href": "slides.html#inspección-de-formularios",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Inspección de formularios",
+    "text": "Inspección de formularios\n\n\nEsta vista sirve para validación y control de calidad. Permite bajar desde la consulta agregada al detalle del formulario procesado y contrastar contra la fuente."
+  },
+  {
+    "objectID": "slides.html#pipeline-5-análisis",
+    "href": "slides.html#pipeline-5-análisis",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Pipeline (5) Análisis",
+    "text": "Pipeline (5) Análisis"
+  },
+  {
+    "objectID": "slides.html#análisis",
+    "href": "slides.html#análisis",
+    "title": "COMAP — Herramienta de Monitoreo",
+    "section": "Análisis",
+    "text": "Análisis"
   },
   {
     "objectID": "slides.html#estado-actual-del-proyecto",
     "href": "slides.html#estado-actual-del-proyecto",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Estado actual del proyecto",
-    "text": "Estado actual del proyecto\nVersión 0 de todos los componentes desarrollados."
+    "text": "Estado actual del proyecto\n\nVersión 0 de todos los componentes desarrollados.\nMuestra reducida de formularios recientes (FIT, FUE, FIT Ampliación)\nValidar arquitectura, flexibilidad y agilidad.\nTrazabilidad y Observabilidad permiten iterar rápido sin perder confianza de los usuarios.\n\n\nDestacar enfoque ágil y ventajas de tener todo el pipeline en versión 0. No esperar a que todos los datos esten perfectos para mostrarlos. :::\n\nVersión 1 (15/3)\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D\n\n\n\n\nVersión 2:\n\nMejora en el proceso de ingesta:\n\nAmpliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la desduplicación de formularios\n\nMejora en reporte de calidad y diccionario de datos, homogeneización de series de tiempo\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nInterconexión con VUI."
   },
   {
-    "objectID": "slides.html#aplicación",
-    "href": "slides.html#aplicación",
+    "objectID": "slides.html#versión-1-153",
+    "href": "slides.html#versión-1-153",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Aplicación",
-    "text": "Aplicación"
+    "section": "Versión 1 (15/3)",
+    "text": "Versión 1 (15/3)\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D"
   },
   {
-    "objectID": "slides.html#búsqueda-por-empresas",
-    "href": "slides.html#búsqueda-por-empresas",
+    "objectID": "slides.html#versión-2",
+    "href": "slides.html#versión-2",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Búsqueda por Empresas",
-    "text": "Búsqueda por Empresas"
-  },
-  {
-    "objectID": "slides.html#inspeccionar-proyectos",
-    "href": "slides.html#inspeccionar-proyectos",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Inspeccionar proyectos",
-    "text": "Inspeccionar proyectos"
-  },
-  {
-    "objectID": "slides.html#inspeccionar-formularios",
-    "href": "slides.html#inspeccionar-formularios",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Inspeccionar formularios",
-    "text": "Inspeccionar formularios"
-  },
-  {
-    "objectID": "slides.html#tablero-1",
-    "href": "slides.html#tablero-1",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Tablero (1)",
-    "text": "Tablero (1)"
-  },
-  {
-    "objectID": "slides.html#tablero-2",
-    "href": "slides.html#tablero-2",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Tablero (2)",
-    "text": "Tablero (2)"
-  },
-  {
-    "objectID": "slides.html#próximos-pasos-versión-1",
-    "href": "slides.html#próximos-pasos-versión-1",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Próximos Pasos: Versión 1",
-    "text": "Próximos Pasos: Versión 1\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D"
-  },
-  {
-    "objectID": "slides.html#próximos-pasos-versión-2",
-    "href": "slides.html#próximos-pasos-versión-2",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Próximos Pasos: Versión 2:",
-    "text": "Próximos Pasos: Versión 2:\n\nMejora en el proceso de ingesta:\n\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la deduplicación de formularios\nIncorporación de planillas de Control y Seguimiento\n\nMejora en reporte de calidad y diccionario de datos.\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nDesarrollo de búsquedas y consultas adicionales.\nInterconexión con VUI."
-  },
-  {
-    "objectID": "slides.html#referencias",
-    "href": "slides.html#referencias",
-    "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Referencias",
-    "text": "Referencias\n\nLlambí, C., Rius, A., Carrasco, P., Carbajal, F., y Cazulo, P. (2014).\nUna evaluación de los incentivos fiscales a la inversión en Uruguay.\nMontevideo: Centro de Estudios Fiscales.\nRepública Oriental del Uruguay. (2025). Decreto N.º 329/025: Régimen de promoción de inversiones.\nMinisterio de Economía y Finanzas.\nhttps://www.gub.uy/ministerio-economia-finanzas/politicas-y-gestion/regimen-decreto-329025"
+    "section": "Versión 2:",
+    "text": "Versión 2:\n\nMejora en el proceso de ingesta:\n\nAmpliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la desduplicación de formularios\n\nMejora en reporte de calidad y diccionario de datos, homogeneización de series de tiempo\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nInterconexión con VUI."
   }
 ]
