@@ -4,7 +4,7 @@
     "href": "slides.html#agenda",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Agenda",
-    "text": "Agenda\n\nBreve contextualización del régimen y del proyecto\nSituación inicial\nSolución propuesta\nEstado de Avance\nHoja de ruta\n\n\nAbrir con una vista general del problema y del recorrido de la presentación. Anticipar que el foco va a estar en cómo convertir registros dispersos en una herramienta de monitoreo usable."
+    "text": "Agenda\n\nBreve contextualización del régimen y del proyecto\nSituación inicial\nSolución propuesta\nEstado de Avance\nCierre\n\n\nAbrir con una vista general del problema y del recorrido de la presentación. Anticipar que el foco va a estar en cómo convertir registros dispersos en una herramienta de monitoreo usable."
   },
   {
     "objectID": "slides.html#objetivo",
@@ -130,20 +130,20 @@
     "href": "slides.html#estado-actual-del-proyecto",
     "title": "COMAP — Herramienta de Monitoreo",
     "section": "Estado actual del proyecto",
-    "text": "Estado actual del proyecto\n\nVersión 0 de todos los componentes desarrollados.\nMuestra reducida de formularios recientes (FIT, FUE, FIT Ampliación)\nValidar arquitectura, flexibilidad y agilidad.\nTrazabilidad y Observabilidad permiten iterar rápido sin perder confianza de los usuarios.\n\n\nDestacar enfoque ágil y ventajas de tener todo el pipeline en versión 0. No esperar a que todos los datos esten perfectos para mostrarlos. :::\n\nVersión 1 (15/3)\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D\n\n\n\n\nVersión 2:\n\nMejora en el proceso de ingesta:\n\nAmpliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la desduplicación de formularios\n\nMejora en reporte de calidad y diccionario de datos, homogeneización de series de tiempo\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nInterconexión con VUI."
+    "text": "Estado actual del proyecto\n\nVersión 0 de todos los componentes desarrollados.\nMuestra reducida de formularios recientes (FIT, FUE, FIT Ampliación)\nValidar arquitectura, flexibilidad y agilidad.\nTrazabilidad y Observabilidad permiten iterar rápido sin perder confianza de los usuarios.\n\n\nDestacar enfoque ágil y ventajas de tener todo el pipeline en versión 0. No esperar a que todos los datos esten perfectos para mostrarlos. :::\n\nVersión 1\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D\n\n\n\n\nVersión 1.1:\n\nMejora en el proceso de ingesta:\n\nAmpliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la desduplicación de formularios\n\nMejora en reporte de calidad y diccionario de datos, homogeneización de series de tiempo\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nInterconexión con VUI."
   },
   {
-    "objectID": "slides.html#versión-1-153",
-    "href": "slides.html#versión-1-153",
+    "objectID": "slides.html#versión-1",
+    "href": "slides.html#versión-1",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Versión 1 (15/3)",
-    "text": "Versión 1 (15/3)\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D"
+    "section": "Versión 1",
+    "text": "Versión 1\n\nDespliegue en red MEF de Versión 1 con datos 2025.\nDesarrollo de pantallas del tablero faltantes:\n\nBeneficios Fiscales\nEmpleo\nExportaciones\nDescentralización\nI + D"
   },
   {
-    "objectID": "slides.html#versión-2",
-    "href": "slides.html#versión-2",
+    "objectID": "slides.html#versión-1.1",
+    "href": "slides.html#versión-1.1",
     "title": "COMAP — Herramienta de Monitoreo",
-    "section": "Versión 2:",
-    "text": "Versión 2:\n\nMejora en el proceso de ingesta:\n\nAmpliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la desduplicación de formularios\n\nMejora en reporte de calidad y diccionario de datos, homogeneización de series de tiempo\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nInterconexión con VUI."
+    "section": "Versión 1.1:",
+    "text": "Versión 1.1:\n\nMejora en el proceso de ingesta:\n\nAmpliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)\nImportar campos adicionales (cuadro detallado de inversiones)\nMejora en la desduplicación de formularios\n\nMejora en reporte de calidad y diccionario de datos, homogeneización de series de tiempo\nDiseño y desarrollo del tablero.\n\nDatos detallados de indicadores de proyectos (empleo, etc.)\n\nInterconexión con VUI."
   }
 ]

@@ -12,7 +12,7 @@ format: revealjs
 - Situación inicial
 - Solución propuesta
 - Estado de Avance
-- Hoja de ruta
+- Cierre
 
 ::: {.notes}
 Abrir con una vista general del problema y del recorrido de la presentación. Anticipar que el foco va a estar en cómo convertir registros dispersos en una herramienta de monitoreo usable.
@@ -430,7 +430,7 @@ Esta vista sirve para validación y control de calidad. Permite bajar desde la c
 ::: {.notes}
 Destacar enfoque ágil y ventajas de tener todo el pipeline en versión 0. No esperar a que todos los datos esten perfectos para mostrarlos. :::
 
-## Versión 1 (15/3)
+## Versión 1
 
 - Despliegue en red MEF de Versión 1 con datos 2025.
 - Desarrollo de pantallas del tablero faltantes:
@@ -441,7 +441,7 @@ Destacar enfoque ágil y ventajas de tener todo el pipeline en versión 0. No es
   - I + D
 
 
-## Versión 2:
+## Versión 1.1:
   - Mejora en el proceso de ingesta:
     - Ampliación de formatos de formularios (Control y Seguimiento, Decretos anteriores FIT, FUE)
     - Importar campos adicionales (cuadro detallado de inversiones)
