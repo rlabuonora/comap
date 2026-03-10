@@ -419,8 +419,6 @@ Esta vista sirve para validación y control de calidad. Permite bajar desde la c
 - Validar arquitectura, flexibilidad y agilidad. 
 - Trazabilidad y Observabilidad permiten iterar rápido sin perder confianza de los usuarios.
 
-::: {.notes}
-Destacar enfoque ágil y ventajas de tener todo el pipeline en versión 0. No esperar a que todos los datos esten perfectos para mostrarlos. :::
 
 ## Versión 1
 
