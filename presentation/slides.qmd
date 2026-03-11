@@ -26,7 +26,7 @@ format: revealjs
 Mostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente.
 :::
 
-<!--
+
 
 ## Régimen COMAP
 
@@ -101,7 +101,7 @@ Aquí ya se mide output del régimen. Son indicadores relativamente más accesib
 Marcar la diferencia entre productos y resultados. Estos indicadores exigen mejor cobertura y series consistentes, por eso aparecen como una meta natural de maduración del sistema.
 :::
 
--->
+
 
 ## Fuentes de Información
 
