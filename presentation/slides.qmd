@@ -407,8 +407,6 @@ Esta vista sirve para validación y control de calidad. Permite bajar desde la c
 <img src="images/shiny/nav-inversion.png" style="width: 100%; height: 600px; object-fit: cover; object-position: center top;" />
 
 
-## Análisis (2)
-<img src="images/shiny/nav-inversion.png" style="width: 100%; height: 900px; object-fit: cover; object-position: center bottom;" />
 
 
 
