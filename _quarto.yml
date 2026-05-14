@@ -6,3 +6,4 @@ format:
   revealjs:
     self-contained: false
     slide-number: true
+    center: false
