@@ -1,6 +1,6 @@
 ---
 title: "COMAP — Herramienta de Monitoreo"
-subtitle: "Avance de Consultoría"
+subtitle: "Cierre de Consultoría"
 author: "Rafael La Buonora"
 lang: es
 format: revealjs
@@ -8,19 +8,22 @@ format: revealjs
 
 
 
-## Objetivo
+## Agradecimientos
 
-- Desarrollar una herramienta informática para automatizar el monitoreo del régimen de promoción de inversiones.
+- Silvana BM
+- Marco
+- Equipo COMAP (LB, LM, PS)
+- Sergio y Fernando
 
+::: {.notes}
 
-## Actividades consultoría
+:::
 
-  - Coordinación LM. Apoyo LB.
-  - Relevamiento de necesidades y recursos.
-  - Revisión de normativa y registros.
-  - Diseño e implementación de Plataforma de Monitoreo.
-    - Consolidar registros históricos para analítica de proyectos basada en datos.
-  - Desarrollo simulador de exoneraciones.
+## Comienzo
+
+  - Llama Marco
+  - Mejora de COMAP
+  - Datos y tecnología
 
 ::: {.notes}
 Mostrar que el trabajo combinó relevamiento, comprensión normativa y desarrollo. Destacar que la plataforma de monitoreo requirió primero ordenar y entender la información existente.
